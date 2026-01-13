@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+    </header>
+    <main class="main">
+      <div>
+        <h2>Contacts</h2>
+        <p>Home / Contacts</p>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57559.55094623376!2d-74.08732196961367!3d40.69376761550509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue%20of%20Liberty!5e0!3m2!1sru!2sua!4v1768338540651!5m2!1sru!2sua"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div>
+          <div>
+            <div>
+              <img width="50" height="50" src="img/logo-icon.svg" alt="" />
+            </div>
+            <p>CONTACTS</p>
+          </div>
+          <h1>Order Furniture Now!</h1>
+          <p>
+            If you want to order our furniture, make a custom request, or have
+            any questions or inquiries, please contact us now.
+          </p>
+          <form>
+            <input type="text" placeholder="Your name*" />
+            <input type="number" name="" id="" placeholder="Phone Number*" />
+            <input type="email" name="" id="" placeholder="Email*" />
+            <input type="text" name="" id="" placeholder="Your Message*" />
+            <button>Request a Quote</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <img width="20" height="24" src="img/logo-icon.svg" alt="">
+                    </div>
+                    <span>FAQ</span>
+                </div>
+                <h2>Need to Know More?</h2>
+            </div>
+            <p>Look through the answers to the most popular questions from our customers. Didn’t find what you need? Just send us a request, and we will get in touch with you shortly.</p>
+        </div>
+        <div>
+            <div>
+                <h3>Do You Use Family-friendly Fabrics?</h3>
+                <p>We use only family-friendly fabrics. Additionally, these fabrics have a function of repelling any spills & stains which may occur during the usage.</p>
+            </div>
+            <div>
+                <h3>When Can I Expect My Order?</h3>
+                <p>Any furniture products available for purchase can be delivered upon your request. Custom orders will arrive at your location in nearly 6-8 weeks.</p>
+            </div>
+            <div>
+                <h3>Can I Order an Individual Design of a Furniture Item?</h3>
+                <p>Yes. We also provide custom furniture manufacturing service. Contact us to discuss what item you need, your ideas, design, fabric, measurements.</p>
+            </div>
+            <div>
+                <h3>What Types of Wood do You Use?</h3>
+                <p>We manufacture all furniture products from natural wood. We currently use such wood types like cherry, pine tree, oak, maple, and other hardwoods.</p>
+            </div>
+            <div>
+                <h3>Can Furniture be Dissembled to Move?</h3>
+                <p>It depends on the type of furniture. Some products can be disassembled to facilitate transportation and movement; others cannot.</p>
+            </div>
+            <div>
+                <h3>Do You Offer Any Guarantee?</h3>
+                <p>Yes. We proudly provide our clients with a 1-year guarantee against manufacturing defects on all our furniture items</p>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
+  </body>
+</html>
