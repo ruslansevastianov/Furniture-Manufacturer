@@ -1,6 +1,6 @@
 @import "css/global.css";
 @import "css/global.header-nav.css";
-@import "/index/css/index.header-hero.css";
+@import "index/css/index.header-hero.css";
 @import "index/css/index.about-us.css";
 @import "index/css/index.categories.css";
 @import "index/css/index.features.css";
