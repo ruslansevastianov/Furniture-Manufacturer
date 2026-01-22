@@ -1,0 +1,70 @@
+.header__nav {
+  width: 100%;
+  height: 103px;
+  display: flex;
+  align-items: center;
+}
+.header__nav-main-container {
+  flex: 1;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav-logo {
+  display: block;
+  width: 140px;
+  height: 43px;
+}
+.header__nav-logo-link {
+  width: 100%;
+  height: 100%;
+}
+/* burger menu */
+/* .header__nav-burger-menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+} */
+.header__nav-burger-menu-line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+}
+
+.header__nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 419px;
+  height: 28px;
+}
+.header__nav-menu-link {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(132, 120, 104);
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.header__nav-menu-link:hover {
+  color: rgb(0, 0, 0);
+}
+.header__nav-icons-social-links {
+  width: 207px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav-icon-social-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
