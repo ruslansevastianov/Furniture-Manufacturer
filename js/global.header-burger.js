@@ -8,7 +8,6 @@ function toggleMenu() {
   burger.classList.toggle("is-active");
   nav.classList.toggle("is-open");
   document.body.classList.toggle('no-scroll');
-  // document.body.classList.toggle("no-scroll");
 }
 
 // Close menu function
@@ -16,7 +15,6 @@ function closeMenu() {
   burger.classList.remove("is-active");
   nav.classList.remove("is-open");
   document.body.classList.remove('no-scroll');
-  // document.body.classList.remove("no-scroll");
 }
 
 // Add click event listener to burger button
