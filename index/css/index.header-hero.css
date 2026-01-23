@@ -5,6 +5,7 @@
   background-image: url(../img/index-hero.jpeg);
   background-position: 54%;
 
+
   @media (min-width: 768px) {
     min-width: 100%;
     min-height: 817px;
