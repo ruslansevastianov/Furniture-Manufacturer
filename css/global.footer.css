@@ -1,0 +1,262 @@
+.footer {
+  width: 100%;
+}
+
+.footer__main-container-content {
+  width: 100%;
+  background-color: #2b2b2b;
+  padding: 60px 24px;
+}
+.footer__container-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer__main-container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 60px; */
+}
+.footer__container-logo-company {
+  width: 163px;
+  height: 50px;
+}
+.footer__logo-company {
+  width: 100%;
+  height: 100%;
+}
+.footer__container-icons-socials {
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footer__container-icon-socials {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+.footer__mobile-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  font-family: "Albert Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 80px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.footer__mobile-name-company {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28.8px;
+  font-family: "Albert Sans", sans-serif;
+  color: rgb(2, 119, 110);
+}
+.footer__mobile-line {
+  width: 100%;
+  height: 1px;
+  background-color: #373737;
+  margin: 50px 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.footer__main-container-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .footer__header-form {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+    font-weight: 800px;
+    font-family: "Albert Sans", sans-serif;
+    color: rgb(247, 247, 245);
+    margin: 20px 0;
+  }
+  .footer__description-form {
+    font-size: 14px;
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.76);
+    line-height: 23.8px;
+  }
+  .footer__form {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer__input-form {
+      width: 100%;
+      height: 40px;
+      background-color: #323232;
+      padding: 11px 22px;
+      border-radius: 20px;
+      border: 0;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      font-family: "Albert Sans", sans-serif;
+    }
+    .footer__input-form::placeholder {
+      color: #848484;
+    }
+
+    .footer__button-form {
+      width: 100%;
+      height: 39px;
+      border-radius: 20px;
+      border: 0;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      font-family: "Albert Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400px;
+      line-height: 16.8px;
+      background-color: #02776e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+}
+/* block-right */
+.footer__main-container-navigation {
+  display: flex;
+  flex-direction: column;
+
+  .footer__main-header-navigation {
+    display: none;
+  }
+  .footer__main-line-navigation {
+    display: none;
+  }
+
+  .footer__container-links {
+    display: flex;
+    flex-direction: column;
+
+    .footer__container-item-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 80px;
+
+      .footer__header-item-links {
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 1.2px;
+        font-weight: 800;
+        font-family: "Albert Sans", sans-serif;
+        color: rgb(247, 247, 245);
+      }
+
+      .footer__line-item-links {
+        width: 16%;
+        height: 3px;
+        background-color: #02776e;
+        margin: 15px 0;
+      }
+      .footer__line-contacts-item-links {
+        width: 11%;
+        height: 3px;
+        background-color: #02776e;
+        margin: 15px 0;
+      }
+
+      .footer__item-link {
+        display: block;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: "Albert Sans", sans-serif;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.76);
+        margin: 10px 0;
+      }
+
+      .footer__container-contacts {
+        display: flex;
+        margin: 10px 0;
+
+        .footer__container-icon-contacts {
+          width: 20px;
+          height: 24px;
+          color: #818180;
+        }
+        .footer__name-contacts {
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Albert Sans", sans-serif;
+          color: rgba(255, 255, 255, 0.76);
+          line-height: 23.8px;
+          margin-left: 10px;
+        }
+        .footer__link-name-contacts {
+          display: block;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: "Albert Sans", sans-serif;
+          color: rgba(255, 255, 255, 0.76);
+          line-height: 23.8px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.footer__container-copyright {
+  width: 100%;
+  height: 271px;
+  background-color: #222222;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .footer__container-icon-copyright {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Albert Sans", sans-serif;
+    line-height: 23.8px;
+    color: rgba(255, 255, 255, 0.76);
+  }
+  .footer__container-menu-copyright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__item-menu-copyright {
+    list-style-type: none;
+    margin-right: 5px;
+  }
+  .footer__link-item-menu-copyright {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Albert Sans", sans-serif;
+    line-height: 23.8px;
+    color: rgba(255, 255, 255, 0.76);
+  }
+}

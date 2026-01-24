@@ -1,0 +1,94 @@
+.features {
+  width: 100%;
+  height: 1182px;
+
+  display: flex;
+  flex-direction: column;
+}
+.features__container-image {
+  width: 100%;
+  max-height: 460px;
+}
+
+/* @media (max-width: 768px) {
+  .features__container-image {
+  
+  }
+} */
+
+
+.features__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.features-container-description {
+  width: 100%;
+  padding: 90px 30px;
+  background-color: #02776e;
+}
+.features__container-icon {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+.features__container-icon-company {
+  width: 20px;
+  height: 24px;
+}
+.features__icon-company {
+  width: 100%;
+  height: 100%;
+}
+.features__name-section {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+}
+.features-header {
+  font-size: 34px;
+  font-family: Philosopher, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  line-height: 40.8px;
+  min-width: 90%;
+  margin-top: 40px;
+}
+.features-description {
+  font-size: 17px;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.76);
+  line-height: 25.5px;
+  margin-top: 20px;
+}
+.features-container-menu {
+  padding-left: 15px;
+  margin-top: 15px;
+}
+.features-menu-item {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500;
+  line-height: 23.8px;
+}
+.features__link-learn-more {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 137px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 15.4px;
+  font-weight: 400;
+  font-family: "Albert Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #3b3b3b;
+  margin-top: 25px;
+}
