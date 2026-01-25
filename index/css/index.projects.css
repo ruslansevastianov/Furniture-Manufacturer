@@ -1,0 +1,128 @@
+.projects {
+  width: 100%;
+  background-image: url(../img/index-projects-background.svg);
+  background-size: cover;
+  padding: 90px 0;
+}
+
+.projects__container-icon-company {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.projects__container-icon {
+  width: 50px;
+  height: 50px;
+}
+.projects__icon-company {
+  width: 100%;
+  height: 100%;
+}
+
+.projects__name-section {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+  font-family: "Albert Sans", sans-serif;
+  color: rgb(132, 120, 104);
+  margin-top: 20px;
+}
+.projects__header {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 40.8px;
+  font-family: Philosopher, sans-serif;
+  color: rgb(58, 58, 58);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 0 24px;
+}
+
+.projects__container-projects {
+  width: 100%;
+  padding: 0 24px;
+
+  .projects__container-project {
+    min-width: 272px;
+    min-height: 272px;
+    /* max-width: 431px;
+    max-height: 431px; */
+    padding: 0 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+
+    .projects__container-description-project {
+      min-width: 245px;
+      min-height: 98px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #3b3b3b;
+
+      .projects__header-project {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24.2px;
+        font-family: Philosopher, sans-serif;
+        color: rgb(255, 255, 255);
+      }
+      .projects-description-project {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Albert Sans", sans-serif;
+        line-height: 23.8px;
+        color: rgba(255, 255, 255, 0.81);
+      }
+    }
+  }
+
+  .container-project-1 {
+    background-image: url(../img/index-projects-kitchen.webp);
+    background-size: cover;
+    /* aspect-ratio: 1; */
+  }
+  .container-project-2 {
+    background-image: url(../img/index-projects-living-room-1.webp);
+    background-size: cover;
+  }
+  .container-project-3 {
+    background-image: url(../img/index-projects-living-room-2.webp);
+    background-size: cover;
+  }
+  .container-project-4 {
+    background-image: url(../img/index-projects-spa-space.webp);
+    background-size: cover;
+  }
+}
+
+.projects__bottom-header {
+  font-size: 28px;
+  font-family: Philosopher, sans-serif;
+  font-family: 400;
+  line-height: 39.2px;
+  color: rgb(58, 58, 58);
+  text-align: center;
+  padding: 0 24px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.projects__discover-link {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 12px;
+  letter-spacing: 1.2px;
+  color: rgb(2, 119, 110);
+  cursor: pointer;
+}
