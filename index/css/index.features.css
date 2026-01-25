@@ -10,6 +10,9 @@
     flex-direction: row;
   }
 
+  @media (min-width: 1222px) {
+    height: 812px;
+  }
 }
 .features__container-image {
   flex: 1;
