@@ -10,9 +10,6 @@
     flex-direction: row;
   }
 
-  @media (min-width: 992px) {
-    padding: 120px 0px;
-  }
 }
 .features__container-image {
   flex: 1;
@@ -78,7 +75,7 @@
   @media (min-width: 768px) {
     font-size: 41px;
   }
-  
+
   @media (min-width: 992px) {
     font-size: 48px;
     line-height: 57.6px;
