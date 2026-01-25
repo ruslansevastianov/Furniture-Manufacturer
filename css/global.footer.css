@@ -22,10 +22,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 60px; */
 
   @media (min-width: 768px) {
-    flex: 0.2;
+    flex: 0.25;
   }
 }
 .footer__container-logo-company {
@@ -86,7 +85,12 @@
   justify-content: center;
 
   @media (min-width: 768px) {
-    margin-top: 85px;
+    margin-top: 45%;
+    align-items: flex-start;
+  }
+  @media (min-width: 768px) {
+    margin-top: 19%;
+    align-items: flex-start;
   }
 
   .footer__header-form {
@@ -97,6 +101,9 @@
     font-family: "Albert Sans", sans-serif;
     color: rgb(247, 247, 245);
     margin: 20px 0;
+
+    @media (min-width: 768px) {
+    }
   }
   .footer__description-form {
     font-size: 14px;
@@ -150,12 +157,16 @@
 }
 /* block-right */
 .footer__main-container-navigation {
-  /* max-width: 442px; */
   flex: 0.6;
-
   margin: auto;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex: 0.65;
+    margin: 0;
+    margin-left: auto;
+  }
 
   .footer__main-header-navigation {
     display: none;
@@ -294,26 +305,25 @@
   height: 271px;
   background-color: #222222;
   padding: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    height: fit-content;
+    height: auto;
   }
 
-  .footer__container-content-copyright{
+  .footer__container-content-copyright {
     max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
-    background-color: aqua;
-}
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
   .footer__container-icon-copyright {
     font-size: 14px;
@@ -323,27 +333,28 @@
     color: rgba(255, 255, 255, 0.76);
 
     @media (min-width: 768px) {
-      flex: 0.3;
+      flex: 0.2;
       text-align: left;
     }
-        @media (min-width: 1024px) {
-           
-        }
+    @media (min-width: 1024px) {
+      flex: 1;
+    }
   }
 
   .footer__container-menu-copyright {
-    width: 100%;
+    max-width: 100%;
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     @media (min-width: 768px) {
       flex: 0.3;
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
-        @media (min-width: 1024px) {
-            flex: content;
-        }
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
   }
   .footer__item-menu-copyright {
     list-style-type: none;
@@ -357,4 +368,3 @@
     color: rgba(255, 255, 255, 0.76);
   }
 }
-
