@@ -3,6 +3,10 @@
   background-image: url(../img/index-projects-background.svg);
   background-size: cover;
   padding: 90px 0;
+
+  @media(min-width: 768px){
+    display: none;
+  }
 }
 
 .projects__container-icon-company {
@@ -46,18 +50,21 @@
 .projects__container-projects {
   width: 100%;
   padding: 0 24px;
+  /* min-height: auto; */
+
+  display: grid;
+  gap: 40px;
+  /* grid-template-columns: repeat(auto-fit, minmax(272px, 471px)); */
+  grid-template-columns: minmax(272px, 471px);
+  grid-template-rows: minmax(272px, auto) minmax(272px, 1fr) minmax(272px, auto) minmax(272px, auto);
+
 
   .projects__container-project {
-    min-width: 272px;
-    min-height: 272px;
-    /* max-width: 431px;
-    max-height: 431px; */
     padding: 0 10px 15px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 30px;
 
     .projects__container-description-project {
       min-width: 245px;
