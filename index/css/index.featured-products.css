@@ -1,10 +1,11 @@
 .featured-products {
   width: 100%;
-  padding: 90px 24px;
   background-color: #2d2d2d;
 
-  @media(min-width:768px){
-    display: none;
+  .featured-products__main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 24px;
   }
 }
 
@@ -42,15 +43,26 @@
   margin: 30px 0;
 }
 
-.featured-products__container-product{
-    margin-bottom: 70px;
-}
-.featured-products__container-product:nth-child(6){
-    margin-bottom: 0;
+.featured-products__container-products {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(272px, 1fr));
+  grid-template-rows: repeat(6, minmax(272px, 1fr));
+  grid-gap: 60px;
+
+  @media (min-width: 480px) {
+    grid-template-columns: repeat(2, minmax(196px, 1fr));
+    grid-template-rows: repeat(3, minmax(352px, 1fr));
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, minmax(264px, 1fr));
+    grid-template-rows: repeat(2, minmax(487px, 1fr));
+  }
 }
 
 .featured-products__link-company {
-  width: 272px;
+  /* width: 272px; */
+  width: 100%;
   position: relative;
 
   .featured-products__version {
@@ -79,7 +91,8 @@
 }
 .featured-products__container-image-product {
   width: 100%;
-  height: 272px;
+  /* height: 272px; */
+  aspect-ratio: 1/1;
 }
 .featured-products__image-product {
   width: 100%;
@@ -95,7 +108,7 @@
 .featured-products__old-price-price {
   width: 85%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 
   .featured-products__old-price {
     font-size: 18px;
@@ -103,21 +116,22 @@
     font-family: "Albert Sans", sans-serif;
     line-height: 28.8px;
     color: rgb(255, 255, 255);
+    margin-right: 20px;
   }
 }
-.featured-products__button-buy{
-    width: 118px;
-    height: 49px;
-    border-radius: 25px;
-    border: 0;
-    font-size: 15.4px;
-    color: rgb(255, 255, 255);
-    font-family: "Albert Sans", sans-serif;
-    font-weight: 400;
-    line-height: 18.48px;
-    background-color: #02776E;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+.featured-products__button-buy {
+  width: 118px;
+  height: 49px;
+  border-radius: 25px;
+  border: 0;
+  font-size: 15.4px;
+  color: rgb(255, 255, 255);
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 400;
+  line-height: 18.48px;
+  background-color: #02776e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
