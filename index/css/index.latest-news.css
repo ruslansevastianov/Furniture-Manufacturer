@@ -8,6 +8,16 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+
+    .latest-news__container-news-explore {
+      @media (min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 25px;
+        row-gap: 10px;
+      }
+    }
   }
 
   .latest-news__container-icon-company {
@@ -42,6 +52,11 @@
     color: rgb(58, 58, 58);
     margin-top: 20px;
     margin-bottom: 30px;
+
+    @media(min-width: 768px){
+        font-size: 41px;
+        width: 70%;
+    }
   }
 
   .latest-news__news-explore {
@@ -49,20 +64,47 @@
     flex-direction: column;
     margin-bottom: 50px;
 
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+      flex-direction: column;
+    }
+
     .latest-news__container-image-textures {
       min-width: 272px;
       min-height: 162px;
       flex: 1;
+
+      @media (min-width: 768px) {
+        /* display: grid;
+        grid-template-columns: repeat(1, minmax(322px, 1fr));
+        grid-template-rows: repeat(1, minmax(192px, auto)); */
+
+        min-width: 322px;
+        min-height: 192px;
+        max-width: 555px;
+        max-height: 331px;
+        flex: 1;
+        margin-top: 80px;
+      }
 
       .latest-news__image-textures {
         width: 100%;
         height: 100%;
       }
     }
+
     .latest-news__container-image-accessories {
       min-width: 272px;
       min-height: 228px;
       flex: 1;
+
+      @media (min-width: 768px) {
+        min-width: 322px;
+        min-height: 270px;
+        max-width: 555px;
+        max-height: 466px;
+        flex: 1;
+      }
 
       .latest-news__image-accessories {
         width: 100%;
@@ -75,6 +117,15 @@
       min-height: 278px;
       flex: 1;
 
+      @media (min-width: 768px) {
+        min-width: 322px;
+        min-height: 326px;
+        max-width: 555px;
+        max-height: 562px;
+        flex: 1;
+        margin-top: -60px;
+      }
+
       .latest-news__image-collection {
         width: 100%;
         height: 100%;
@@ -85,6 +136,16 @@
       min-width: 272px;
       min-height: 174px;
       flex: 1;
+
+      @media (min-width: 768px) {
+        min-width: 322px;
+        min-height: 206px;
+        max-width: 555px;
+        max-height: 355px;
+        flex: 1;
+
+        margin-top: 40px;
+      }
 
       .latest-news__image-sofa-styles {
         width: 100%;
