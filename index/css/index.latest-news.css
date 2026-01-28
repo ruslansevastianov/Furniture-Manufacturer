@@ -1,0 +1,131 @@
+.latest-news {
+  width: 100%;
+  background-image: url(../img/index-latest-news-background.svg);
+  background-size: contain;
+  padding: 90px 0;
+
+  .latest-news__main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .latest-news__container-icon-company {
+    display: flex;
+    width: fit-content;
+
+    .latest-news__container-icon {
+      width: 20px;
+      height: 24px;
+
+      .latest-news__icon-company {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .latest-news__name-section {
+      font-size: 12px;
+      font-weight: 800;
+      font-family: "Albert Sans", sans-serif;
+      line-height: 24px;
+      letter-spacing: 1.2px;
+      color: rgb(132, 120, 104);
+      margin-left: 10px;
+    }
+  }
+
+  .latest-news__header {
+    font-size: 34px;
+    font-weight: 400;
+    font-family: Philosopher, sans-serif;
+    line-height: 40.8px;
+    color: rgb(58, 58, 58);
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .latest-news__news-explore {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    .latest-news__container-image-textures {
+      min-width: 272px;
+      min-height: 162px;
+      flex: 1;
+
+      .latest-news__image-textures {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .latest-news__container-image-accessories {
+      min-width: 272px;
+      min-height: 228px;
+      flex: 1;
+
+      .latest-news__image-accessories {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1/1;
+      }
+    }
+    .latest-news__container-image-collection {
+      min-width: 272px;
+      min-height: 278px;
+      flex: 1;
+
+      .latest-news__image-collection {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .latest-news__container-image-sofa-styles {
+      min-width: 272px;
+      min-height: 174px;
+      flex: 1;
+
+      .latest-news__image-sofa-styles {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .latest-news__news-date {
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "Albert Sans", sans-serif;
+      line-height: 23.8px;
+      color: rgb(132, 120, 104);
+      margin-top: 15px;
+    }
+    .latest-news__news-description {
+      font-size: 22px;
+      font-weight: 400;
+      font-family: Philosopher, sans-serif;
+      line-height: 24.2px;
+      color: rgb(58, 58, 58);
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .latest-news__link-news {
+      display: block;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      width: 133px;
+      height: 50px;
+      border: 0;
+      border-radius: 25px;
+      font-size: 15.4px;
+      font-weight: 400;
+      font-family: "Albert Sans", sans-serif;
+      line-height: 18.48px;
+      color: rgb(255, 255, 255);
+      background-color: #02776e;
+    }
+  }
+}
