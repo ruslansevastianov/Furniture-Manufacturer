@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="shop/css/shop.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -14,290 +15,264 @@
 
   <body>
     <header class="header">
-      <nav
+      <!-- <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="global.header-nav.partial.html"
-      ></nav>
+      ></nav> -->
     </header>
     <main class="main">
-      <p class="main__description">Store homepage</p>
-      <h1 class="main__header">Products</h1>
-      <div class="main__container-products">
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-angela-sofa.jpeg"
-                alt="Angela Sofa"
-              />
-            </div>
-            <p class="main__header-type-product">Angela Sofa</p>
-          </a>
-          <p class="main__product-price">$330,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">Bestseller</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-arona-armchair.jpeg"
-                alt="Arona Armchair"
-              />
-            </div>
-            <p class="main__header-type-product">Arona Armchair</p>
-          </a>
-          <p class="main__product-price">$199,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">Sale</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-barr-chair.jpeg"
-                alt="Barr Chair"
-              />
-            </div>
-            <p class="main__header-type-product">Barr Chair</p>
-          </a>
-          <p class="main__product-sale-price">-$-1-1-0-,0-0- U-S-D-</p>
-          <p class="main__product-price">$100,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">New</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-delar-sofa.jpeg"
-                alt="Delar Sofa"
-              />
-            </div>
-            <p class="main__header-type-product">Delar Sofa</p>
-          </a>
-          <p class="main__product-price">$350,00 USD</p>
-          <a class="mai__-product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-donna-bedside-table.jpeg"
-                alt="Donna Bedside Table"
-              />
-            </div>
-            <p class="main__header-type-product">Donna Bedside Table</p>
-          </a>
-          <p class="main__product-price">$150,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">New</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-erica-chest-of-drawers.jpeg"
-                alt="Erica Chest of Drawers"
-              />
-            </div>
-            <p class="main__header-type-product">Erica Chest of Drawers</p>
-          </a>
-          <p class="main__product-price">$150,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-fusion-chair.jpeg"
-                alt="Fusion Chair"
-              />
-            </div>
-            <p class="main__header-type-product">Fusion Chair</p>
-          </a>
-          <p class="main__product-price">$100,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-fusion-dresser.jpeg"
-                alt="Fusion Dresser"
-              />
-            </div>
-            <p class="main__header-type-product">Fusion Dresser</p>
-          </a>
-          <p class="main__product-price">$320,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">Sale</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-george-sofa.jpeg"
-                alt="George Sofa"
-              />
-            </div>
-            <p class="main__header-type-product">George Sofa</p>
-          </a>
-          <p class="main__product-sale-price">-$-3-1-0-,0-0 -U-S-D</p>
-          <p class="main__product-price">$100,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">Sale</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-glory-cabinet.jpeg"
-                alt="Glory Cabinet"
-              />
-            </div>
-            <p class="main__header-type-product">Glory Cabinet</p>
-          </a>
-          <p class="main__product-sale-price">-$-2-5-0,0-0 -U-S-D</p>
-          <p class="main__product-price">$140,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-lora-armchair.jpeg"
-                alt="Lora Armchair"
-              />
-            </div>
-            <p class="main__header-type-product">Lora Armchair</p>
-          </a>
-          <p class="main__product-price">$290,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-lord-armchair.jpeg"
-                alt="Lord Armchair"
-              />
-            </div>
-            <p class="main__header-type-product">Lord Armchair</p>
-          </a>
-          <p class="main__product-price">$220,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">Bestseller</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-snitch-cabinet.jpeg"
-                alt="Snitch Cabinet"
-              />
-            </div>
-            <p class="main__header-type-product">Snitch Cabinet</p>
-          </a>
-          <p class="main__product-price">$90,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">Limited</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-ultimate-green-chair.jpeg"
-                alt="Ultimate Green Chair"
-              />
-            </div>
-            <p class="main__header-type-product">Ultimate Green Chair</p>
-          </a>
-          <p class="main__product-price">$110,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <p class="main__news-product">Limited</p>
-            <div class="main__container-image-product">
-              <img
-                class="main__image-product"
-                width="263"
-                height="263"
-                src="shop/img/shop-upi-bedside-table.jpeg"
-                alt="Upi Bedside Table"
-              />
-            </div>
-            <p class="main__header-type-product">Upi Bedside Table</p>
-          </a>
-          <p class="main__product-price">$110,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-        <article class="main__product-card">
-          <a class="main__link-product" href="#">
-            <div>
+      <div class="main__main-container">
+        <p class="main__description">Store homepage</p>
+        <h1 class="main__header">Products</h1>
+        <div class="main__container-products">
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
               <div class="main__container-image-product">
                 <img
                   class="main__image-product"
-                  width="263"
-                  height="263"
-                  src="shop/img/shop-bubbles-sofa.jpeg"
-                  alt="Bubbles Sofa"
+                  src="shop/img/shop-angela-sofa.jpeg"
+                  alt="Angela Sofa"
                 />
               </div>
-              <p class="main__pre-order-product">Pre-order</p>
+              <p class="main__header-type-product">Angela Sofa</p>
+            </a>
+            <p class="main__product-price">$330,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-arona-armchair.jpeg"
+                  alt="Arona Armchair"
+                />
+                <p class="main__news-product">Bestseller</p>
+              </div>
+              <p class="main__header-type-product">Arona Armchair</p>
+            </a>
+            <p class="main__product-price">$199,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-barr-chair.jpeg"
+                  alt="Barr Chair"
+                />
+                <p class="main__news-product">Sale</p>
+              </div>
+              <p class="main__header-type-product">Barr Chair</p>
+            </a>
+            <div class="main__product-old-price-price">
+            <s class="main__product-sale-price">$110,00 USD</s>
+            <p class="main__product-price">$100,00 USD</p>
             </div>
-            <p class="main__header-type-product">Bubbles Sofa</p>
-          </a>
-          <p class="main__product-price">$310,00 USD</p>
-          <a class="main__product-buy" href="#">Buy</a>
-        </article>
-      </div>
-      <div class="main__container-page">
-
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-delar-sofa.jpeg"
+                  alt="Delar Sofa"
+                />
+              <p class="main__news-product">New</p>
+              </div>
+              <p class="main__header-type-product">Delar Sofa</p>
+            </a>
+            <p class="main__product-price">$350,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-donna-bedside-table.jpeg"
+                  alt="Donna Bedside Table"
+                />
+              </div>
+              <p class="main__header-type-product">Donna Bedside Table</p>
+            </a>
+            <p class="main__product-price">$150,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-erica-chest-of-drawers.jpeg"
+                  alt="Erica Chest of Drawers"
+                />
+              <p class="main__news-product">New</p>
+              </div>
+              <p class="main__header-type-product">Erica Chest of Drawers</p>
+            </a>
+            <p class="main__product-price">$150,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-fusion-chair.jpeg"
+                  alt="Fusion Chair"
+                />
+              </div>
+              <p class="main__header-type-product">Fusion Chair</p>
+            </a>
+            <p class="main__product-price">$100,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-fusion-dresser.jpeg"
+                  alt="Fusion Dresser"
+                />
+              </div>
+              <p class="main__header-type-product">Fusion Dresser</p>
+            </a>
+            <p class="main__product-price">$320,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-george-sofa.jpeg"
+                  alt="George Sofa"
+                />
+              <p class="main__news-product">Sale</p>
+              </div>
+              <p class="main__header-type-product">George Sofa</p>
+            </a>
+            <div class="main__product-old-price-price">
+            <s class="main__product-sale-price">$310,00 USD</s>
+            <p class="main__product-price">$100,00 USD</p>
+            </div>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-glory-cabinet.jpeg"
+                  alt="Glory Cabinet"
+                />
+              <p class="main__news-product">Sale</p>
+              </div>
+              <p class="main__header-type-product">Glory Cabinet</p>
+            </a>
+            <div class="main__product-old-price-price">
+            <s class="main__product-sale-price">$250,00 USD</s>
+            <p class="main__product-price">$140,00 USD</p>
+            </div>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-lora-armchair.jpeg"
+                  alt="Lora Armchair"
+                />
+              </div>
+              <p class="main__header-type-product">Lora Armchair</p>
+            </a>
+            <p class="main__product-price">$290,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-lord-armchair.jpeg"
+                  alt="Lord Armchair"
+                />
+              </div>
+              <p class="main__header-type-product">Lord Armchair</p>
+            </a>
+            <p class="main__product-price">$220,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-snitch-cabinet.jpeg"
+                  alt="Snitch Cabinet"
+                />
+              <p class="main__news-product">Bestseller</p>
+              </div>
+              <p class="main__header-type-product">Snitch Cabinet</p>
+            </a>
+            <p class="main__product-price">$90,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-ultimate-green-chair.jpeg"
+                  alt="Ultimate Green Chair"
+                />
+              <p class="main__news-product">Limited</p>
+              </div>
+              <p class="main__header-type-product">Ultimate Green Chair</p>
+            </a>
+            <p class="main__product-price">$110,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div class="main__container-image-product">
+                <img
+                  class="main__image-product"
+                  src="shop/img/shop-upi-bedside-table.jpeg"
+                  alt="Upi Bedside Table"
+                />
+              <p class="main__news-product">Limited</p>
+              </div>
+              <p class="main__header-type-product">Upi Bedside Table</p>
+            </a>
+            <p class="main__product-price">$110,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+          <article class="main__product-card">
+            <a class="main__link-product" href="#">
+              <div>
+                <div class="main__container-image-product">
+                  <img
+                    class="main__image-product"
+                    src="shop/img/shop-bubbles-sofa.jpeg"
+                    alt="Bubbles Sofa"
+                  />
+                <p class="main__pre-order-product">Pre-order</p>
+                </div>
+              </div>
+              <p class="main__header-type-product">Bubbles Sofa</p>
+            </a>
+            <p class="main__product-price">$310,00 USD</p>
+            <a class="main__product-buy" href="#">Buy</a>
+          </article>
+        </div>
+        <!-- <div class="main__container-page">
           <div class="main__container-per-page">
             <p class="main__per-page-header">Products per page:</p>
             <div class="main__per-page-container-dropdown">
@@ -318,14 +293,13 @@
             <div class="main__navigation-number-page">1</div>
             <div class="main__navigation-arrow">&#62;</div>
           </div>
-
-     
+        </div> -->
       </div>
     </main>
-    <footer
+    <!-- <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
-    ></footer>
+    ></footer> -->
   </body>
 </html>
