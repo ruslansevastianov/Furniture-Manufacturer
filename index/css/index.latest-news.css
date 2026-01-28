@@ -75,10 +75,6 @@
       flex: 1;
 
       @media (min-width: 768px) {
-        /* display: grid;
-        grid-template-columns: repeat(1, minmax(322px, 1fr));
-        grid-template-rows: repeat(1, minmax(192px, auto)); */
-
         min-width: 322px;
         min-height: 192px;
         max-width: 555px;
