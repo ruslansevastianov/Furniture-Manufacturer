@@ -1,8 +1,56 @@
-@import "css/global.css";
-@import "css/global.header-nav.css";
+@import "../../css/global.css";
+@import "../../css/global.header-nav.css";
 @import "about/css/about.about-us-mission.css";
 @import "about/css/about.steps.css";
 @import "about/css/about.our-team.css";
 @import "about/css/about.vacancies.css";
-@import "css/global.footer.css";
+@import "../../css/global.footer.css";
 
+.main {
+  margin-top: 103px;
+
+  @media (min-width: 769px) {
+    margin-top: 0;
+  }
+
+
+    .about__main-container-header {
+    background-color: #0a7970;
+    width: 100%;
+    height: 210px;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .about__header-description {
+      font-size: 34px;
+      font-weight: 400;
+      font-style: Philosopher, sans-serif;
+      line-height: 40.8px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin-bottom: 30px;
+
+      @media (min-width: 768px) {
+        font-size: 41px;
+      }
+      @media (min-width: 992px) {
+        font-size: 48px;
+      }
+    }
+    .about__header-nav {
+      font-size: 14px;
+      font-weight: 500;
+      font-family: "Albert Sans", sans-serif;
+      line-height: 23.8px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+
+      @media (min-width: 992px) {
+        font-size: 15px;
+      }
+    }
+  }
+}

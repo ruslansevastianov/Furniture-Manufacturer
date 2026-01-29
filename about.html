@@ -1,43 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="stylesheet" href="about/css/about.css" />
-    <script src="https://unpkg.com/htmx.org@1.9.10"
-        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-        crossorigin="anonymous"></script>
-</head>
-
-<body>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header">
-        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
     </header>
     <main class="main">
-        <section class="container-about-header">
-            <h2 class="container-about-header__header">About Us</h2>
-            <p class="container-about-header__nav">Home / About Us</p>
-        </section>
-        <div data-hx-trigger="load" data-hx-swap="outerHTML"
-            data-hx-get="about/partials/about.about-us-mission.partial.html"></div>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about/partials/about.steps.partial.html">
-        </section>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML"
-            data-hx-get="about/partials/about.our-team.partial.html"></section>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML"
-            data-hx-get="about/partials/about.vacancies.partial.html"></section>
-        <section class="next-step">
-            <div class="next-step__container-description">
-                <h1 class="next-step__header">Take the Next Step Towards Transforming Your Space with Our Exquisite Collections</h1>
-                <p class="next-step__description">Get a full list of items for sale with customization options and transparent prices.</p>
-                <a class="next-step__link-download-pdf" href="#">Download PDF</a>
-            </div>
-        </section>
+      <section class="about__main-container-header">
+        <h2 class="about__header-description ">About Us</h2>
+        <p class="about__header-nav">Home / About Us</p>
+      </section>
+      <!-- <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about/partials/about.about-us-mission.partial.html"
+      ></div> -->
+      <!-- <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about/partials/about.steps.partial.html"
+      ></section> -->
+      <!-- <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about/partials/about.our-team.partial.html"
+      ></section> -->
+      <!-- <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about/partials/about.vacancies.partial.html"
+      ></section> -->
+      <!-- <section class="next-step">
+        <div class="next-step__container-description">
+          <h1 class="next-step__header">
+            Take the Next Step Towards Transforming Your Space with Our
+            Exquisite Collections
+          </h1>
+          <p class="next-step__description">
+            Get a full list of items for sale with customization options and
+            transparent prices.
+          </p>
+          <a class="next-step__link-download-pdf" href="#">Download PDF</a>
+        </div>
+      </section> -->
     </main>
-    <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
-</body>
-
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
+  </body>
 </html>
