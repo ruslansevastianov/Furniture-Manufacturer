@@ -48,4 +48,361 @@
       }
     }
   }
+
+  .projects__main-container {
+    width: 100%;
+    background-image: url(../img/projects-tabs-background.svg);
+    background-attachment: fixed;
+    padding: 90px 0;
+
+    .projects__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+
+      .projects__container-description {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .projects__container-header {
+          display: flex;
+          flex-direction: column;
+
+          @media (min-width: 768px) {
+            flex: 0.45;
+          }
+
+          @media (min-width: 1134px) {
+            flex: 0.5;
+          }
+
+          .projects__container-icon-company {
+            display: flex;
+            width: fit-content;
+
+            .projects__container-icon {
+              width: 20px;
+              height: 24px;
+
+              .projects__icon {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .projects__name-section {
+              font-size: 12px;
+              font-weight: 800;
+              font-family: "Albert Sans", sans-serif;
+              line-height: 24px;
+              letter-spacing: 1.2px;
+              color: rgb(132, 120, 104);
+              margin-left: 10px;
+            }
+          }
+          .projects__header {
+            font-size: 34px;
+            font-weight: 400;
+            font-family: Philosopher, sans-serif;
+            line-height: 40.8px;
+            color: rgb(58, 58, 58);
+            margin: 30px 0 50px 0;
+
+            @media (min-width: 768px) {
+              font-size: 41px;
+              line-height: 49.2px;
+            }
+            @media (min-width: 992px) {
+              font-size: 48px;
+              line-height: 57.6px;
+            }
+          }
+        }
+        .projects__container-text {
+          .projects__text-item {
+            font-size: 17px;
+            font-weight: 400;
+            font-family: "Albert Sans", sans-serif;
+            line-height: 25.5px;
+            color: rgb(133, 133, 133);
+          }
+          .projects__text-item-1 {
+            margin-bottom: 30px;
+          }
+
+          @media (min-width: 768px) {
+            flex: 0.45;
+          }
+          @media (min-width: 992px) {
+            margin-top: 40px;
+          }
+          @media (min-width: 1134px) {
+            flex: 0.45;
+          }
+        }
+      }
+
+      .projects__container-categories {
+        margin-top: 50px;
+        display: flex;
+        overflow-x: auto;
+        border-bottom: 2px solid #e4e4e4;
+
+        @media (min-width: 768px) {
+          margin-top: 0;
+        }
+
+        .projects__categories-item {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          min-width: fit-content;
+          height: 56px;
+          padding: 12px;
+          font-size: 17px;
+          font-weight: 700;
+          font-family: "Albert Sans", sans-serif;
+          line-height: 25.5px;
+          color: #b6b6b6;
+          cursor: pointer;
+          transition: color 0.4s ease;
+
+          @media (min-width: 768px) {
+            margin-right: 15px;
+          }
+        }
+        .projects__categories-item:hover {
+          color: #858585;
+        }
+        .projects__categories-item-active {
+          color: #3b3b3b;
+          border-bottom: 2px solid #076d65;
+        }
+      }
+
+      .projects__container-images {
+        margin-top: 30px;
+
+        .projects__container-images-column {
+          display: grid;
+
+          grid-template-columns: repeat(1, minmax(272px, 1fr));
+          grid-template-rows: repeat(4, minmax(260px, 1fr));
+          row-gap: 20px;
+
+          @media (min-width: 480px) {
+            grid-template-columns: repeat(2, minmax(201px, 1fr));
+            grid-template-rows: repeat(2, minmax(192px, 1fr));
+            grid-gap: 30px;
+          }
+
+          .projects__container-image-item {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1/1;
+            position: relative;
+
+            .projects__container-image-wrapper {
+              width: 100%;
+              height: 100%;
+
+              .projects__image-wrapper {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .projects__container-image-description {
+              position: absolute;
+              bottom: 15px;
+              left: 5%;
+              width: 90%;
+              height: 98px;
+              background-color: #f7f7f5;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+
+              @media (min-width: 480px) {
+                width: 90%;
+                min-height: 98px;
+                max-height: 122px;
+              }
+
+              .projects__image-header {
+                font-size: 22px;
+                font-weight: 400;
+                font-family: Philosopher, sans-serif;
+                line-height: 24.2px;
+                color: rgb(132, 120, 104);
+
+                @media (min-width: 768px) {
+                  font-size: 24px;
+                  line-height: 26.4px;
+                }
+                @media (min-width: 992px) {
+                  font-size: 26px;
+                  line-height: 28.6px;
+                }
+              }
+              .projects__image-description {
+                font-size: 14px;
+                font-weight: 500;
+                font-family: "Albert Sans", sans-serif;
+                line-height: 23.8px;
+                color: rgb(133, 133, 133);
+
+                @media (min-width: 992px) {
+                  font-size: 15px;
+                  line-height: 25.5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .projects__client-container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      min-height: 680px;
+      max-height: 783px;
+    }
+
+    .projects__client-container-description {
+      width: 100%;
+      padding: 90px 30px;
+      background-color: #02776e;
+
+      @media (min-width: 768px) {
+        width: 50%;
+        max-height: 100%;
+        padding: 100px 45px;
+      }
+      @media (min-width: 992px) {
+        padding: 110px 45px;
+      }
+      @media (min-width: 1300px) {
+        padding: 100px 100px;
+      }
+      @media (min-width: 1500px) {
+        padding: 100px 200px;
+      }
+
+      .projects__client-container-image-quotation-mark {
+        width: 50px;
+        height: 50px;
+        color: #90c1bc;
+      }
+
+      .projects__client-description {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Albert Sans", sans-serif;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        margin: 30px 0 60px 0;
+
+        @media (min-width: 768px) {
+          font-size: 23px;
+          line-height: 29.9px;
+        }
+        @media (min-width: 992px) {
+          font-size: 26px;
+          line-height: 33.8px;
+        }
+      }
+      .projects__client-container-author {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+
+        .projects__container-image-author {
+          width: 70px;
+          height: 70px;
+
+          .projects__image-author {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .projects__container-description-author {
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+
+          .projects__name-author {
+            font-size: 22px;
+            font-weight: 400;
+            font-family: Philosopher, sans-serif;
+            line-height: 24.2px;
+            color: rgb(255, 255, 255);
+
+            @media (min-width: 768px) {
+              font-size: 24px;
+            }
+            @media (min-width: 992px) {
+              font-size: 26px;
+            }
+          }
+          .projects__profession-author {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Albert Sans", sans-serif;
+            line-height: 29.4px;
+            color: rgba(247, 247, 245, 0.58);
+
+            @media (min-width: 992px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .projects__client-container-image {
+      width: 100%;
+      min-height: 192px;
+      flex: 1;
+
+      @media (min-width: 768px) {
+        width: 50%;
+        max-height: 100%;
+      }
+
+      .projects__client-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }
+
+/* .projects__categories-item-active {
+  color: #3b3b3b;
+  border-bottom: 2px solid #076d65;
+} */
+
+/* .projects__container-living-room {
+    display: none;
+  }
+  .projects__container-office-furniture {
+    display: none;
+  }
+  .projects__container-bedroom-furniture {
+    display: none;
+  }
+  .projects__container-kitchen-furnishings {
+    display: none;
+  } */
