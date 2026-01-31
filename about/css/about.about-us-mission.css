@@ -148,7 +148,7 @@
       }
 
       .a-m__mission-container-image {
-        width: 272px;
+        min-width: 272px;
         min-height: 296px;
         flex: 1;
 
