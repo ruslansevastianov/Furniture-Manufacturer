@@ -2,10 +2,6 @@ const listHeadersTypesProducts = document.body.querySelectorAll(".projects__cate
 const listTypesBlocksProducts = document.body.querySelectorAll(".projects__container-images-column");
 
 
-
-
-
-
 for(let i = 0; i < listHeadersTypesProducts.length; i++){
 
     listHeadersTypesProducts[i].addEventListener("click", () => {
@@ -33,7 +29,7 @@ for(let i = 0; i < listHeadersTypesProducts.length; i++){
                         }
                     } else{
                         listTypesBlocksProducts[j].classList.add("not-visible");
-                        
+
                         if(listHeadersTypesProducts[j].classList.contains("active")){
                             listHeadersTypesProducts[j].classList.remove("active");
                         }
