@@ -116,7 +116,7 @@
     .a-m__mission-container{
         display: flex;
         flex-direction: column;
-        padding-bottom: 90px;
+        padding: 90px 0;
 
         .a-m__mission-container-image{
             min-width: 272px;
