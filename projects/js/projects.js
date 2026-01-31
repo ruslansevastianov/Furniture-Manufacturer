@@ -2,43 +2,49 @@ const listHeadersTypesProducts = document.body.querySelectorAll(".projects__cate
 const listTypesBlocksProducts = document.body.querySelectorAll(".projects__container-images-column");
 
 
-listHeadersTypesProducts[0].addEventListener("click",() => {
-    listTypesBlocksProducts[1].classList.add("not-visible");
-})
 
 
-// for(let i = 0; i < listHeadersTypesProducts.length; i++){
 
-//     listHeadersTypesProducts[i].addEventListener("click", () => {
 
-//         const count = i;
+for(let i = 0; i < listHeadersTypesProducts.length; i++){
 
-//         for(let j = 0; j < listTypesBlocksProducts.length; j++){
+    listHeadersTypesProducts[i].addEventListener("click", () => {
 
-//             if(listTypesBlocksProducts[j] === count){
-//                 if(listTypesBlocksProducts[j].classList.contains("not-visible")){
-//                     listTypesBlocksProducts[j].classList.remove("not-visible")
-                
-//                     for(let k = 0; k < listTypesBlocksProducts.length; k++){
-//                         if(listTypesBlocksProducts[k] !== count){
-//                             if(!listTypesBlocksProducts[k].classList.contains("not-visible")){
-//                                     listTypesBlocksProducts[k].classList.add("not-visible")
-//                             }
-//                             listTypesBlocksProducts[k].classList.add("not-visible")
-//                         }
-//                     }
-//                 }   
-//                 break;
-//             } else{
-//                 for(let l = 0; l < listTypesBlocksProducts.length; l++){
-//                     if(!listTypesBlocksProducts[l].classList.contains("not-visible")){
-//                         listTypesBlocksProducts[l].classList.add("not-visible");
-//                     } 
-//                 }
-//             }
-//         }
-//     });  
-// }
+        const count = i;
+
+        for(let j = 0; j < listTypesBlocksProducts.length; j++){
+
+            if(j === count){
+                if(listTypesBlocksProducts[j].classList.contains("not-visible")){
+                    listTypesBlocksProducts[j].classList.remove("not-visible");
+                    if(!listHeadersTypesProducts[j].classList.contains("active")){
+                        listHeadersTypesProducts[j].classList.add("active");
+                    }
+                } else{
+                        listTypesBlocksProducts[j].classList.remove("not-visible");
+                        // listHeadersTypesProducts[j].classList.add("active");
+                }  
+            } else {
+                    if(!listTypesBlocksProducts[j].classList.contains("not-visible")){
+                        listTypesBlocksProducts[j].classList.add("not-visible");
+                      
+                        if(listHeadersTypesProducts[j].classList.contains("active")){
+                            listHeadersTypesProducts[j].classList.remove("active");
+                        }
+                    } else{
+                        listTypesBlocksProducts[j].classList.add("not-visible");
+                        
+                        if(listHeadersTypesProducts[j].classList.contains("active")){
+                            listHeadersTypesProducts[j].classList.remove("active");
+                        }
+                    }
+                }
+            }
+        
+    
+    });
+
+}
 
 
 

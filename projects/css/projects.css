@@ -2,6 +2,7 @@
 @import "../../css/global.header-nav.css";
 @import "../../css/global.footer.css";
 
+
 .main {
   margin-top: 103px;
 
@@ -171,6 +172,14 @@
           cursor: pointer;
           transition: color 0.4s ease;
 
+            &.active {
+            border-bottom: 2px solid #02776E;
+            color: #000000;
+          }
+          &.active:hover{
+            color: #000000;
+          }
+
           @media (min-width: 768px) {
             margin-right: 15px;
           }
@@ -200,6 +209,11 @@
             grid-gap: 30px;
 
           }
+
+          &.not-visible {
+            display: none;
+          }
+
 
           .projects__container-image-item {
             width: 100%;
@@ -265,6 +279,9 @@
               }
             }
           }
+            .not-visible {
+    display: none;
+  }
         }
       }
     }
@@ -389,10 +406,4 @@
     }
   }
 
-  .active{
-    display: block;
-  }
-  .not-visible {
-    display: none;
-  }
 }
