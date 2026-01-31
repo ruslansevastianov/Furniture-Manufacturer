@@ -13,7 +13,7 @@
     .a-m__about-us-container{
         display: flex;
         flex-direction: column;
-        padding-bottom: 90px;
+        padding-top: 90px;
 
         .a-m__about-us-container-description{
             display: flex;
@@ -116,6 +116,7 @@
     .a-m__mission-container{
         display: flex;
         flex-direction: column;
+        padding-bottom: 90px;
 
         .a-m__mission-container-image{
             min-width: 272px;
@@ -180,6 +181,7 @@
 
                 .a-m__accordion-item{
                     width: 100%;
+                    border-bottom: 1px solid #D5D5D5;
 
                     .a-m__accordion-container-button{
                         padding: 20px 0;
@@ -195,10 +197,9 @@
                             color: rgb(58, 58, 58);
                         }
                         .a-m__accordion-container-icon-plus{
+                            position: relative;
                             width: 15px;
                             height: 15px;
-                            position: relative;
-                            background-color: aqua;
                             display: flex;
                             align-items: center;
                             justify-content:center;
@@ -209,15 +210,44 @@
                                 background-color: #555555;
                             }
                             .a-m__accordion-icon-line-vertical{
+                                position: absolute;
                                 width: 2px;
                                 height: 100%;
                                 background-color: #555555;
-                                /* z-index: 3; */
                             }
                         }
                     }
-
+                    .a-m__accordion-item-container-content{
+                        height: 0;
+                        overflow: hidden;
+                        .a-m__accordion-item-content{
+                            font-size: 17px;
+                            font-weight: 400;
+                            font-family: "Albert Sans", sans-serif;
+                            line-height: 25.5px;
+                            color: rgb(133, 133, 133);
+                            padding: 20px 0;
+                        }
+                    }
                 }
+            }
+            .a-m__link-see-our-works{
+                display: block;
+                text-decoration: none;
+                width: 164px;
+                height: 50px;
+                border: 0;
+                border-radius: 25px;
+                background-color: #02776E;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 15.4px;
+                font-weight: 700;
+                font-family: "Albert Sans", sans-serif;
+                line-height: 18.48px;
+                color: rgb(255, 255, 255);
+                margin-top: 30px;
             }
         }
 
