@@ -25,6 +25,7 @@
 
   @media (min-width: 768px) {
     flex: 0.25;
+      align-items: flex-start;
   }
 }
 .footer__container-logo-company {
@@ -38,6 +39,7 @@
 .footer__container-icons-socials {
   width: 165px;
   display: flex;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
@@ -84,12 +86,9 @@
   align-items: center;
   justify-content: center;
 
+
   @media (min-width: 768px) {
-    margin-top: 45%;
-    align-items: flex-start;
-  }
-  @media (min-width: 768px) {
-    margin-top: 19%;
+    margin-top: 75px;
     align-items: flex-start;
   }
 
@@ -101,9 +100,6 @@
     font-family: "Albert Sans", sans-serif;
     color: rgb(247, 247, 245);
     margin: 20px 0;
-
-    @media (min-width: 768px) {
-    }
   }
   .footer__description-form {
     font-size: 14px;
@@ -212,7 +208,6 @@
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
-
       margin-top: 30px;
     }
 
