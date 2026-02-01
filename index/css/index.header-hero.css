@@ -1,10 +1,10 @@
 .header-hero {
-  max-width: 100%;
+  margin-top: 103px;
+  width: 100%;
   max-height: 1098px;
   padding: 90px 0 100px 0;
   background-image: url(../img/index-hero.jpeg);
   background-position: 54%;
-
 
   @media (min-width: 768px) {
     min-width: 100%;
@@ -19,10 +19,14 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
 
   .header-hero__container-content {
     max-width: 1200px;
     margin: auto;
+    padding: 0 24px;
   }
 
   .header-hero__header {
@@ -44,22 +48,23 @@
       font-size: 97px;
       width: 50%;
     }
-    @media (min-width: 1150px) {
+    @media (min-width: 1142px) {
       font-size: 97px;
-      width: 70%;
+      width: 100%;
     }
   }
-  .header-hero-description {
+  .header-hero__description {
     font-size: 17px;
     font-family: "Albert Sans", sans-serif;
     font-weight: 400;
     color: #858585;
     line-height: 25.5px;
+    margin: 40px 0 20px 0;
 
     @media (min-width: 768px) {
       max-width: 300px;
     }
-    @media (min-width: 1150px) {
+    @media (min-width: 1142px) {
       max-width: 500px;
     }
   }
@@ -86,14 +91,15 @@
       flex-direction: row;
       max-width: 370px;
     }
-    @media (min-width: 1150px) {
-      max-width: 500px;
+    @media (min-width: 800px) {
+      max-width: 50%;
     }
   }
   .header-hero__item-icon {
     width: 272px;
     height: 82px;
     padding: 15px 0;
+    margin-bottom: 40px;
   }
   .header-hero__container-icon {
     width: 50px;
@@ -110,5 +116,6 @@
     text-align: left;
     color: rgb(133, 133, 133);
     letter-spacing: 1.2px;
+    margin-top: 10px;
   }
 }
