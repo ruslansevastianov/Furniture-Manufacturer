@@ -12,9 +12,18 @@
       display: flex;
       flex-direction: column;
 
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
       .vacancies__container-header {
         display: flex;
         flex-direction: column;
+
+        @media (min-width: 768px) {
+          flex: 0.43;
+        }
 
         .vacancies__container-icon-company {
           display: flex;
@@ -46,9 +55,19 @@
           line-height: 40.8px;
           color: rgb(58, 58, 58);
           margin: 20px 0 50px 0;
+
+          @media (min-width: 768px) {
+            font-size: 41px;
+          }
+          @media (min-width: 992px) {
+            font-size: 48px;
+          }
         }
       }
       .vacancies__block-description {
+        @media (min-width: 768px) {
+          flex: 0.5;
+        }
         .vacancies__description {
           font-size: 17px;
           font-weight: 400;
@@ -72,10 +91,23 @@
       display: flex;
       flex-direction: column;
 
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
       .vacancies__container-accordion {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
+
+        @media (min-width: 768px) {
+          flex: 0.5;
+
+          &.vacancies__container-accordion-first {
+            flex: 0.42;
+          }
+        }
 
         .vacancies__accordion-item {
           margin-top: 20px;
@@ -96,6 +128,13 @@
                 font-family: Philosopher, sans-serif;
                 line-height: 22px;
                 color: rgb(58, 58, 58);
+
+                @media (min-width: 768px) {
+                  font-size: 24px;
+                }
+                @media (min-width: 992px) {
+                  font-size: 26px;
+                }
               }
               .vacancies__accordion-item-description {
                 font-size: 12px;
@@ -139,7 +178,7 @@
                 line-height: 25.5px;
                 color: rgb(133, 133, 133);
               }
-              .vacancies__accordion-item-content-small-description{
+              .vacancies__accordion-item-content-small-description {
                 font-size: 17px;
                 font-weight: 400;
                 font-family: "Albert Sans", sans-serif;
