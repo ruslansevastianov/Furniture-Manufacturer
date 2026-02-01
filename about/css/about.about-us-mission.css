@@ -234,6 +234,7 @@
               display: flex;
               align-items: center;
               justify-content: space-between;
+              cursor: pointer;
 
               .a-m__accordion-item-header {
                 font-size: 22px;
