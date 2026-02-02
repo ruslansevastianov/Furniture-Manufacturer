@@ -261,12 +261,20 @@
                   width: 2px;
                   height: 100%;
                   background-color: #555555;
+                  transition: height 0.3s ease;
+
+                  &.a-m__accordion-icon-line-vertical-not-visible{
+                    height: 0;
+                  }
                 }
               }
             }
             .a-m__accordion-item-container-content {
-              height: 0;
+              max-height: 0;
               overflow: hidden;
+              opacity: 0;
+              transition: all 0.3s ease;
+
               .a-m__accordion-item-content {
                 font-size: 17px;
                 font-weight: 400;
@@ -274,6 +282,10 @@
                 line-height: 25.5px;
                 color: rgb(133, 133, 133);
                 padding: 20px 0;
+              }
+              &.active-content-dropdown {
+                max-height: 280px;
+                opacity: 1;
               }
             }
           }
