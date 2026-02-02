@@ -1,6 +1,7 @@
 .vacancies {
   width: 100%;
   background-image: url(../img/about-about-us-background.svg);
+  background-attachment: fixed;
   padding: 90px 0;
 
   .vacancies__main-container {
@@ -88,11 +89,13 @@
       }
     }
     .vacancies__main-container-accordions {
+      /* height: fit-content; */
       display: flex;
       flex-direction: column;
 
       @media (min-width: 768px) {
         flex-direction: row;
+        align-items: flex-end;
         justify-content: space-between;
       }
 
@@ -102,6 +105,7 @@
         flex-direction: column;
 
         @media (min-width: 768px) {
+          height: 100%;
           flex: 0.5;
 
           &.vacancies__container-accordion-first {
@@ -114,7 +118,7 @@
           width: 100%;
           border-bottom: 1px solid #d5d5d5;
 
-          .accordion__accordion-container-button {
+          .vacancies__accordion-container-button {
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -160,16 +164,28 @@
               }
               .vacancies__accordion-icon-line-vertical {
                 position: absolute;
+                &.vacancies__accordion1-icon-line-vertical{
+                position: absolute;
                 width: 2px;
                 height: 100%;
                 background-color: #555555;
+                &.vacancies__accordion1-icon-line-vertical-not-visible{
+                  height: 0;
+                }
+                }
+                &.vacancies__accordion2-icon-line-vertical{
+                position: absolute;
+                width: 2px;
+                height: 100%;
+                background-color: #555555;
+                &.vacancies__accordion2-icon-line-vertical-not-visible{
+                  height: 0;
+                }
+                }
               }
             }
           }
           .vacancies__accordion-item-container-content {
-            height: 0;
-            overflow: hidden;
-
             .vacancies__accordion-item-content {
               .vacancies__accordion-item-content-small-header {
                 font-size: 17px;
@@ -178,12 +194,34 @@
                 line-height: 25.5px;
                 color: rgb(133, 133, 133);
               }
+
               .vacancies__accordion-item-content-small-description {
                 font-size: 17px;
                 font-weight: 400;
                 font-family: "Albert Sans", sans-serif;
                 line-height: 25.5px;
                 color: rgb(133, 133, 133);
+                padding-bottom: 30px;
+              }
+            }
+            &.vacancies__accordion1-item-container-content{
+              max-height: 0;
+              overflow: hidden;
+              opacity: 0;
+              transition: all 0.3s ease;
+              &.active-content-dropdown1{
+                max-height: 530px;
+                opacity: 1;
+              }
+            }
+            &.vacancies__accordion2-item-container-content{
+              max-height: 0;
+              overflow: hidden;
+              opacity: 0;
+              transition: all 0.3s ease;
+              &.active-content-dropdown2{
+                max-height: 530px;
+                opacity: 1;
               }
             }
           }

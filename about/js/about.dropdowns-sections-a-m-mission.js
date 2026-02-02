@@ -2,6 +2,7 @@ const listButtonsDropdowns = document.querySelectorAll(".a-m__accordion-containe
 const contentDropdowns = document.querySelectorAll(".a-m__accordion-item-container-content");
 const listLineVerticalLines = document.querySelectorAll(".a-m__accordion-icon-line-vertical");
 
+
 for (let i = 0; i < listButtonsDropdowns.length; i++) {
   listButtonsDropdowns[i].addEventListener("click", () => {
     for (let j = 0; j < contentDropdowns.length; j++) {
