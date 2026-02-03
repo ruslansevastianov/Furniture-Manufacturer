@@ -254,7 +254,7 @@
       }
     }
     &.what-we-offer__track-container::-webkit-scrollbar {
-      height: 0; /* Chrome, Safari, Opera — скрыть горизонтальный скроллбар */
+      height: 0; /* Chrome, Safari, Opera — приховати горизонтальний скроллбар */
     }
   }
 
@@ -352,12 +352,6 @@
     width: fit-content;
     justify-content: space-between;
 
-    /* position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: fit-content; */
-
     .what-we-offer__slider-dot {
       width: 10px;
       height: 10px;
@@ -365,6 +359,10 @@
       background-color: #cacaca;
       margin: 0 10px;
       cursor: pointer;
+
+      &.active-dot-item{
+        background-color: black;
+      }
 
       &.what-we-offer__slider-dot:hover {
         background-color: black;
