@@ -2,7 +2,7 @@
   width: 100%;
   height: 633px;
   padding: 100px 0;
-  background-image: url(../img/index-background-take-the-next-step.png);
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/index-background-take-the-next-step.png);
   background-position: 52%;
   background-size: cover;
   background-attachment: fixed;
