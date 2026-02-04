@@ -1,0 +1,356 @@
+.our-team {
+  width: 100%;
+
+  /* block1 */
+  .our-team__container-furniture-design {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      height: 664px;
+      flex: 1;
+    }
+    @media (min-width: 794px) {
+      height: 634px;
+      flex: 1;
+    }
+    @media (min-width: 919px) {
+      height: 604px;
+      flex: 1;
+    }
+    @media (min-width: 992px) {
+      height: 613px;
+      flex: 1;
+    }
+
+    .our-team__container-image-design {
+      width: 100%;
+      min-height: 192px;
+      /* flex: 1; */
+
+      @media (min-width: 768px) {
+        flex: 1;
+      }
+      @media (min-width: 1200px) {
+        min-width: 50%;
+      }
+
+      .our-team__image-design {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        @media (min-width: 768px) {
+          object-fit: cover;
+          object-position: 100%;
+        }
+      }
+    }
+
+    .our-team__container-description-design {
+      width: 100%;
+      padding: 90px 30px;
+      background-color: #02776e;
+
+      @media (min-width: 768px) {
+        padding: 100px 45px 95px 45px;
+        flex: 1;
+      }
+      @media (min-width: 992px) {
+        padding: 110px 45px 100px 45px;
+        flex: 1;
+      }
+      @media (min-width: 1200px) {
+        /* flex: 1; */
+        min-width: 50%;
+        padding: 110px 5% 100px 5%;
+      }
+      @media (min-width: 1306px) {
+        /* flex: 1; */
+        min-width: 50%;
+        padding: 110px 15% 100px 10%;
+      }
+
+      .our-team__container-image-quotation-mark {
+        width: 50px;
+        height: 50px;
+        color: #90c1bc;
+
+        .our-team__image-quotation-mark {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .our-team__description-design {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Albert Sans", sans-serif;
+        line-height: 26px;
+        color: rgb(255, 255, 255);
+        margin: 20px 0 50px 0;
+
+        @media (min-width: 768px) {
+          font-size: 23px;
+          line-height: 29.9px;
+        }
+        @media (min-width: 992px) {
+          font-size: 26px;
+          line-height: 33.8px;
+        }
+      }
+
+      .our-team__container-author {
+        display: flex;
+        align-items: center;
+
+        .our-team__container-image-author {
+          width: 70px;
+          height: 70px;
+          margin-right: 20px;
+
+          .our-team__image-author {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .our-team__container-amanda {
+          display: flex;
+          flex-direction: column;
+
+          .our-team__name-author {
+            font-size: 22px;
+            font-weight: 400;
+            font-family: Philosopher, sans-serif;
+            line-height: 24.2px;
+            color: rgb(255, 255, 255);
+
+            @media (min-width: 768px) {
+              font-size: 24px;
+            }
+            @media (min-width: 992px) {
+              font-size: 26px;
+            }
+          }
+          .our-team__profession-author {
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Albert Sans", sans-serif;
+            line-height: 29.4px;
+            color: rgba(247, 247, 245, 0.58);
+
+            @media (min-width: 992px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* block-our-team___team */
+  .our-team__team {
+    width: 100%;
+    padding: 60px 40px;
+    background-color: #2b2b2b;
+
+    @media (min-width: 992px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .our-team__team-container-description {
+      @media (min-width: 992px) {
+        flex: 0.3;
+      }
+
+      .our-team__container-icon-company {
+        display: flex;
+
+        .our-team__container-icon {
+          width: 20px;
+          height: 24px;
+
+          .our-team__icon-company {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .our-team__name-section {
+          font-size: 12px;
+          font-weight: 800;
+          font-family: "Albert Sans", sans-serif;
+          line-height: 24px;
+          letter-spacing: 1.2px;
+          color: rgb(247, 247, 245);
+          margin-left: 10px;
+        }
+      }
+      .our-team__team-header {
+        font-size: 34px;
+        font-weight: 400;
+        font-family: Philosopher, sans-serif;
+        line-height: 40.8px;
+        color: rgb(255, 255, 255);
+        margin: 20px 0;
+
+        @media (min-width: 768px) {
+          font-size: 41px;
+          line-height: 49.2px;
+        }
+        @media (min-width: 992px) {
+          font-size: 48px;
+          line-height: 57.6px;
+        }
+      }
+      .our-team__team-description {
+        font-size: 17px;
+        font-weight: 400;
+        font-family: "Albert Sans", sans-serif;
+        line-height: 25.5px;
+        color: rgb(220, 220, 220);
+      }
+      .our-team__team-question {
+        font-size: 22px;
+        font-weight: 400;
+        font-family: Philosopher, sans-serif;
+        line-height: 24.2px;
+        color: rgb(255, 255, 255);
+        margin: 20px 0 35px 0;
+
+        @media (min-width: 768px) {
+          font-size: 24px;
+          line-height: 26.4px;
+        }
+        @media (min-width: 992px) {
+          font-size: 26px;
+          line-height: 28.6px;
+        }
+      }
+      .our-team__team-check-vacancies {
+        width: 179px;
+        height: 50px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 25px;
+        background-color: #02776e;
+        font-size: 15.4px;
+        font-weight: 700;
+        font-family: "Albert Sans", sans-serif;
+        line-height: 18.48px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+    }
+
+    /* carousel */
+    .our-team__main-container-carousel {
+      margin-top: 40px;
+      width: 100%;
+      height: 364px;
+      position: relative;
+      outline: 1px solid red;
+
+      @media (min-width: 992px) {
+        flex: 0.8;
+        margin-top: 0;
+        margin-left: 50px;
+      }
+
+      .our-team__carousel-container-arrow-left {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50px;
+        background-color: #e0e0e0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -12px;
+        cursor: pointer;
+
+        &.our-team__carousel-container-arrow-left:hover {
+          background-color: #ffffff;
+        }
+
+        @media (min-width: 768px) {
+          width: 32px;
+          height: 32px;
+          left: -16px;
+        }
+
+        .our-team__carousel-arrow-left {
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid #626863;
+          border-left: 2px solid #626863;
+          transform: rotate(-45deg);
+          margin-left: 2px;
+
+          &.our-team__carousel-arrow-left:hover {
+            border-top: 2px solid #565656;
+            border-left: 2px solid #565656;
+          }
+
+          @media (min-width: 768px) {
+            width: 11px;
+            height: 11px;
+            margin-left: 4px;
+          }
+        }
+      }
+
+      .our-team__carousel-container-arrow-right {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50px;
+        background-color: #e0e0e0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        right: -12px;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &.our-team__carousel-container-arrow-right:hover {
+          background-color: #ffffff;
+        }
+
+        @media (min-width: 768px) {
+          width: 32px;
+          height: 32px;
+          right: -16px;
+        }
+
+        .our-team__carousel-arrow-right {
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid #626863;
+          border-left: 2px solid #626863;
+          transform: rotate(135deg);
+          margin-right: 2px;
+
+          &.our-team__carousel-arrow-right:hover {
+            border-top: 2px solid #565656;
+            border-left: 2px solid #565656;
+          }
+
+          @media (min-width: 768px) {
+            width: 11px;
+            height: 11px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
