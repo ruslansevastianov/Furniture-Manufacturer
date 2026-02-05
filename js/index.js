@@ -1,6 +1,7 @@
 function init() {
   import("./global.header-burger.js");
   import("../index/js/index.what-we-offer-carousel.js");
+  import("../index/js/index.slider-above-footer.js");
   import("../projects/js/projects.js");
   import("../about/js/about.js");
 }
