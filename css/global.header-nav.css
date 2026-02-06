@@ -90,7 +90,17 @@
   display: block;
   width: 30px;
   height: 30px;
+
+.logo_2gS {
+  fill: #02776E; /* Стандартный зеленый */
+
+&.logo_2gS:hover {
+  fill: #32CD32; /* Светло-зеленый при наведении */
 }
+}
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

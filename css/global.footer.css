@@ -47,7 +47,14 @@
 .footer__container-icon-socials {
   width: 30px;
   height: 30px;
-  background-color: white;
+
+  .footer-logo_2gS{
+    fill: white;
+
+    &.footer-logo_2gS:hover{
+      fill: #E0E0D9;
+    }
+  }
 }
 .footer__mobile-description {
   font-size: 18px;
@@ -266,6 +273,7 @@
           height: 24px;
           color: #818180;
         }
+
         .footer__name-contacts {
           font-size: 14px;
           font-weight: 500;
