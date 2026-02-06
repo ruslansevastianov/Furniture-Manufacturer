@@ -133,4 +133,10 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  cursor: pointer;
+
+  &.featured-products__button-buy:hover{
+    background-color: white;
+    color: #3B3B3B;
+  }
 }
