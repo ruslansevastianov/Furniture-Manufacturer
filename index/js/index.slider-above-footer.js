@@ -6,6 +6,7 @@ const contentMainContainer = document.querySelector(".lower-carousel__content-ma
 const slideWidth = contentMainContainer.offsetWidth;
 
 
+
 arrowLeft.addEventListener("click", () => {
   trackContainer.scroll({
     left: trackContainer.scrollLeft - slideWidth,

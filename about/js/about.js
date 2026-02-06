@@ -2,6 +2,7 @@ function init() {
   import("../../js/global.header-burger.js");
   import("./about.dropdowns-sections-a-m-mission.js");
   import("./about.dropdowns-section-vacancies.js");
+  import("./about.our-team-carousel.js");
 }
 
 
