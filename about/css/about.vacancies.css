@@ -45,7 +45,7 @@
             font-family: "Albert Sans", sans-serif;
             line-height: 24px;
             letter-spacing: 1.2px;
-            color: rgb(132, 120, 104);
+            color: var(--color-text-main-nav-section-headers);
             margin-left: 10px;
           }
         }
@@ -54,7 +54,7 @@
           font-weight: 400;
           font-family: Philosopher, sans-serif;
           line-height: 40.8px;
-          color: rgb(58, 58, 58);
+          color: var(--color-text-small-headers-in-sections);
           margin: 20px 0 50px 0;
 
           @media (min-width: 768px) {
@@ -74,7 +74,7 @@
           font-weight: 400;
           font-family: "Albert Sans", sans-serif;
           line-height: 25.5px;
-          color: rgb(133, 133, 133);
+          color: var(--color-text-main-description);
           margin-bottom: 20px;
         }
         .vacancies__link-send-cv {
@@ -83,13 +83,12 @@
           font-family: "Albert Sans", sans-serif;
           line-height: 12px;
           letter-spacing: 1.2px;
-          color: rgb(2, 119, 110);
+          color: var(--color-main-company);
           cursor: pointer;
         }
       }
     }
     .vacancies__main-container-accordions {
-      /* height: fit-content; */
       display: flex;
       flex-direction: column;
 
@@ -116,7 +115,7 @@
         .vacancies__accordion-item {
           margin-top: 20px;
           width: 100%;
-          border-bottom: 1px solid #d5d5d5;
+          border-bottom: 1px solid var(--color-background-type-6);
 
           .vacancies__accordion-container-button {
             cursor: pointer;
@@ -131,7 +130,7 @@
                 font-weight: 400;
                 font-family: Philosopher, sans-serif;
                 line-height: 22px;
-                color: rgb(58, 58, 58);
+                color: var(--color-text-small-headers-in-sections);
 
                 @media (min-width: 768px) {
                   font-size: 24px;
@@ -145,7 +144,7 @@
                 font-weight: 400;
                 font-family: Philosopher, sans-serif;
                 line-height: 12px;
-                color: rgb(132, 120, 104);
+                color: var(--color-text-main-nav-section-headers);
                 margin-top: 10px;
               }
             }
@@ -160,7 +159,7 @@
               .vacancies__accordion-icon-line-horizontal {
                 width: 100%;
                 height: 2px;
-                background-color: #555555;
+                background-color: var(--color-background-main);
               }
               .vacancies__accordion-icon-line-vertical {
                 position: absolute;
@@ -168,7 +167,7 @@
                 position: absolute;
                 width: 2px;
                 height: 100%;
-                background-color: #555555;
+                background-color: var(--color-background-main);
                 &.vacancies__accordion1-icon-line-vertical-not-visible{
                   height: 0;
                 }
@@ -177,7 +176,7 @@
                 position: absolute;
                 width: 2px;
                 height: 100%;
-                background-color: #555555;
+                background-color: var(--color-background-main);
                 &.vacancies__accordion2-icon-line-vertical-not-visible{
                   height: 0;
                 }
@@ -192,7 +191,7 @@
                 font-weight: 700;
                 font-family: "Albert Sans", sans-serif;
                 line-height: 25.5px;
-                color: rgb(133, 133, 133);
+                color: var(--color-text-main-description);
               }
 
               .vacancies__accordion-item-content-small-description {
@@ -200,7 +199,7 @@
                 font-weight: 400;
                 font-family: "Albert Sans", sans-serif;
                 line-height: 25.5px;
-                color: rgb(133, 133, 133);
+                color: var(--color-text-main-description);
                 padding-bottom: 30px;
               }
             }

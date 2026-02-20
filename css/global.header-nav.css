@@ -71,7 +71,7 @@
 .header__nav-menu-link {
   text-decoration: none;
   font-size: 15px;
-  color: rgb(132, 120, 104);
+  color: var(--color-text-main-nav-section-headers);
   font-family: "Albert Sans", sans-serif;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -92,7 +92,7 @@
   height: 30px;
 
   .logo_2gS {
-    fill: #02776e;
+    fill: var(--color-main-company);
 
     &.logo_2gS:hover {
       fill: #32cd32;

@@ -40,7 +40,6 @@
     min-width: 247px;
     max-width: 441px;
     margin-top: 0;
-    /* padding: 0 40px; */
     padding-right: 40px;
   }
 }
@@ -60,7 +59,7 @@
 .about-us__name-section {
   font-size: 12px;
   font-family: "Albert Sans", sans-serif;
-  color: rgb(132, 120, 104);
+  color: var(--color-text-main-nav-section-headers);
   font-weight: 800;
   margin-left: 10px;
 }
@@ -69,7 +68,7 @@
   width: 210px;
   font-size: 34px;
   font-family: Philosopher, sans-serif;
-  color: rgb(58, 58, 58);
+  color: var(--color-text-small-headers-in-sections);
   font-weight: 400;
   line-height: 40.8px;
 }
@@ -78,7 +77,7 @@
   width: 100%;
   font-size: 17px;
   font-family: "Albert Sans", sans-serif;
-  color: rgb(133, 133, 133);
+  color: var(--color-text-main-description);
   font-weight: 400;
   line-height: 25.5px;
 }
@@ -91,10 +90,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #02776e;
+  background-color: var(--color-main-company);
   font-size: 15.4px;
   font-family: "Albert Sans", sans-serif;
-  color: rgb(255, 255, 255);
+  color: var(--color-text-default-main);
   font-weight: 600;
   border-radius: 25px;
 }
@@ -126,12 +125,12 @@
 .about-us__image-quotation-mark {
   width: 100%;
   height: 100%;
-  color: #02776e;
+  color: var(--color-main-company);
 }
 .about-us__header-design {
   width: 90%;
   font-size: 20px;
-  color: rgb(132, 120, 104);
+  color: var(--color-text-main-nav-section-headers);
   font-family: "Albert Sans", sans-serif;
   font-weight: 500;
   line-height: 26px;
@@ -140,7 +139,7 @@
   margin-top: 35px;
   font-size: 17px;
   font-family: "Albert Sans", sans-serif;
-  color: rgb(133, 133, 133);
+  color: var(--color-text-main-description);
   font-weight: 400;
   line-height: 25.5px;
 }
@@ -149,14 +148,14 @@
 }
 .about-us__header-telephone {
   font-size: 12px;
-  color: rgb(133, 133, 133);
+  color: var(--color-text-main-description);
   font-family: "Albert Sans", sans-serif;
   line-height: 12px;
   font-weight: 800;
 }
 .about-us__link-telephone {
   font-size: 12px;
-  color: rgb(132, 120, 104);
+  color: var(--color-text-main-nav-section-headers);
   font-family: "Albert Sans", sans-serif;
   line-height: 12px;
   font-weight: 800;

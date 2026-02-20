@@ -53,7 +53,7 @@
             font-family: "Albert Sans", sans-serif;
             line-height: 24px;
             letter-spacing: 1.2px;
-            color: rgb(132, 120, 104);
+            color: var(--color-text-main-nav-section-headers);
             margin-left: 10px;
           }
         }
@@ -62,7 +62,7 @@
           font-weight: 400;
           font-family: Philosopher, sans-serif;
           line-height: 40.8px;
-          color: rgb(58, 58, 58);
+          color: var(--color-text-small-headers-in-sections);
           margin: 25px 0;
         }
         .a-m__about-us-description {
@@ -70,12 +70,12 @@
           font-weight: 400;
           font-family: "Albert Sans", sans-serif;
           line-height: 25.5px;
-          color: rgb(133, 133, 133);
+          color: var(--color-text-main-description);
         }
         .a-m__about-us-line {
           width: 100%;
           height: 1px;
-          background-color: #e4e4e4;
+          background-color:  var(--color-background-type-5);
           margin: 40px 0 25px 0;
         }
         .a-m__about-us-container-stores {
@@ -101,14 +101,14 @@
               font-weight: 400;
               font-family: Philosopher, sans-serif;
               line-height: 24.2px;
-              color: rgb(58, 58, 58);
+              color: var(--color-text-small-headers-in-sections);
             }
             .a-m__about-us-description-stores {
               font-size: 17px;
               font-weight: 400;
               font-family: "Albert Sans", sans-serif;
               line-height: 25.5px;
-              color: rgb(133, 133, 133);
+              color: var(--color-text-main-description);
             }
           }
         }
@@ -200,7 +200,7 @@
             font-family: "Albert Sans", sans-serif;
             line-height: 24.2px;
             letter-spacing: 1.2px;
-            color: rgb(132, 120, 104);
+            color: var(--color-text-main-nav-section-headers);
             margin-left: 10px;
           }
         }
@@ -209,7 +209,7 @@
           font-weight: 400;
           font-family: Philosopher, sans-serif;
           line-height: 40.8px;
-          color: rgb(58, 58, 58);
+          color: var(--color-text-small-headers-in-sections);
           margin: 25px 0;
         }
         .a-m__mission-description {
@@ -217,7 +217,7 @@
           font-weight: 400;
           font-family: "Albert Sans", sans-serif;
           line-height: 25.5px;
-          color: rgb(133, 133, 133);
+          color: var(--color-text-main-description);
           margin-bottom: 25px;
         }
         /* accordion */
@@ -227,7 +227,7 @@
 
           .a-m__accordion-item {
             width: 100%;
-            border-bottom: 1px solid #d5d5d5;
+            border-bottom: 1px solid var(--color-background-type-6);
 
             .a-m__accordion-container-button {
               padding: 20px 0;
@@ -241,7 +241,7 @@
                 font-weight: 400;
                 font-family: Philosopher, sans-serif;
                 line-height: 24.2px;
-                color: rgb(58, 58, 58);
+                color: var(--color-text-small-headers-in-sections);
               }
               .a-m__accordion-container-icon-plus {
                 position: relative;
@@ -254,13 +254,13 @@
                 .a-m__accordion-icon-line-horizontal {
                   width: 100%;
                   height: 2px;
-                  background-color: #555555;
+                  background-color: var(--color-background-main);
                 }
                 .a-m__accordion-icon-line-vertical {
                   position: absolute;
                   width: 2px;
                   height: 100%;
-                  background-color: #555555;
+                  background-color: var(--color-background-main);
                   transition: height 0.3s ease;
 
                   &.a-m__accordion-icon-line-vertical-not-visible{
@@ -280,7 +280,7 @@
                 font-weight: 400;
                 font-family: "Albert Sans", sans-serif;
                 line-height: 25.5px;
-                color: rgb(133, 133, 133);
+                color: var(--color-text-main-description);
                 padding: 20px 0;
               }
               &.active-content-dropdown {
@@ -297,7 +297,7 @@
           height: 50px;
           border: 0;
           border-radius: 25px;
-          background-color: #02776e;
+          background-color: var(--color-main-company);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -305,7 +305,7 @@
           font-weight: 700;
           font-family: "Albert Sans", sans-serif;
           line-height: 18.48px;
-          color: rgb(255, 255, 255);
+          color: var(--color-text-default-main);
           margin-top: 30px;
         }
       }

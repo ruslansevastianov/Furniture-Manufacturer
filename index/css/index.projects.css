@@ -33,7 +33,7 @@
   line-height: 12px;
   letter-spacing: 1.2px;
   font-family: "Albert Sans", sans-serif;
-  color: rgb(132, 120, 104);
+  color: var(--color-text-main-nav-section-headers);
   margin-top: 20px;
 }
 .projects__header {
@@ -41,7 +41,7 @@
   font-weight: 400;
   line-height: 40.8px;
   font-family: Philosopher, sans-serif;
-  color: rgb(58, 58, 58);
+  color: var(--color-text-small-headers-in-sections);
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -91,7 +91,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      background-color: #3b3b3b;
+      background-color: var(--color-background-type-1);
       padding: 8px;
       text-align: center;
 
@@ -105,14 +105,14 @@
         font-weight: 400;
         line-height: 24.2px;
         font-family: Philosopher, sans-serif;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-default-main);
       }
       .projects-description-project {
         font-size: 14px;
         font-weight: 500;
         font-family: "Albert Sans", sans-serif;
         line-height: 23.8px;
-        color: rgba(255, 255, 255, 0.81);
+        color: var(--color-text-type-2);
       }
     }
   }
@@ -123,7 +123,7 @@
   font-family: Philosopher, sans-serif;
   font-family: 400;
   line-height: 39.2px;
-  color: rgb(58, 58, 58);
+  color: var(--color-text-small-headers-in-sections);
   text-align: center;
   padding: 0 24px;
   margin-top: 50px;
@@ -137,6 +137,6 @@
   font-family: "Albert Sans", sans-serif;
   font-weight: 12px;
   letter-spacing: 1.2px;
-  color: rgb(2, 119, 110);
+  color: var(--color-main-company);
   cursor: pointer;
 }

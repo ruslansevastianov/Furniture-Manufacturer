@@ -16,7 +16,7 @@
     font-weight: 400;
     font-family: Philosopher, sans-serif;
     line-height: 40.8px;
-    color: rgb(255, 255, 255);
+    color: var(--color-text-default-main);
     width: 90%;
     text-align: center;
 
@@ -40,12 +40,12 @@
     height: 50px;
     border: 0;
     border-radius: 25px;
-    background-color: #02776e;
+    background-color: var(--color-main-company);
     font-size: 15.4px;
     font-weight: 700;
     font-family: "Albert Sans", sans-serif;
     line-height: 18.48px;
-    color: rgb(255, 255, 255);
+    color: var(--color-text-default-main);
     margin-top: 40px;
   }
 }

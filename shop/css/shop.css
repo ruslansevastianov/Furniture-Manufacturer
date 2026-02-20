@@ -14,7 +14,7 @@
     font-weight: 400;
     font-family: Philosopher, sans-serif;
     line-height: 39.2px;
-    color: rgb(58, 58, 58);
+    color: var(--color-text-small-headers-in-sections);
     margin-bottom: 70px;
   }
   .main__header {
@@ -22,7 +22,7 @@
     font-weight: 400;
     font-family: Philosopher, sans-serif;
     line-height: 39.2px;
-    color: rgb(58, 58, 58);
+    color: var(--color-text-small-headers-in-sections);
     margin: 20px 0 40px 0;
   }
 
@@ -89,7 +89,7 @@
             font-weight: 600;
             font-family: "Albert Sans", sans-serif;
             line-height: 20px;
-            color: rgb(255, 255, 255);
+            color: var(--color-text-default-main);
             background-color: #464c5c;
             display: flex;
             align-items: center;
@@ -116,7 +116,7 @@
           font-weight: 400;
           font-family: "Albert Sans", sans-serif;
           line-height: 28.8px;
-          color: rgb(58, 58, 58);
+          color: var(--color-text-small-headers-in-sections);
           margin: 15px 0;
         }
       }
@@ -130,7 +130,7 @@
         font-weight: 400;
         font-family: "Albert Sans", sans-serif;
         line-height: 28.8px;
-        color: rgb(58, 58, 58);
+        color: var(--color-text-small-headers-in-sections);
         margin-right: 15px;
       }
       .main__product-price {
@@ -138,7 +138,7 @@
         font-weight: 400;
         font-family: "Albert Sans", sans-serif;
         line-height: 28.8px;
-        color: rgb(2, 119, 110);
+        color: var(--color-main-company);
         text-align: left;
       }
       .main__product-buy {
@@ -150,10 +150,10 @@
         font-weight: 400;
         font-family: "Albert Sans", sans-serif;
         line-height: 16.8px;
-        color: rgb(255, 255, 255);
+        color: var(--color-text-default-main);
         border: 0;
         border-radius: 20px;
-        background-color: #02776e;
+        background-color: var(--color-main-company);
         display: flex;
         align-items: center;
         justify-content: center;

@@ -39,7 +39,7 @@
       font-family: "Albert Sans", sans-serif;
       line-height: 24px;
       letter-spacing: 1.2px;
-      color: rgb(132, 120, 104);
+      color: var(--color-text-main-nav-section-headers);
       margin-left: 10px;
     }
   }
@@ -49,7 +49,7 @@
     font-weight: 400;
     font-family: Philosopher, sans-serif;
     line-height: 40.8px;
-    color: rgb(58, 58, 58);
+    color: var(--color-text-small-headers-in-sections);
     margin-top: 20px;
     margin-bottom: 30px;
 
@@ -154,7 +154,7 @@
       font-weight: 500;
       font-family: "Albert Sans", sans-serif;
       line-height: 23.8px;
-      color: rgb(132, 120, 104);
+      color: var(--color-text-main-nav-section-headers);
       margin-top: 15px;
     }
     .latest-news__news-description {
@@ -162,7 +162,7 @@
       font-weight: 400;
       font-family: Philosopher, sans-serif;
       line-height: 24.2px;
-      color: rgb(58, 58, 58);
+      color: var(--color-text-small-headers-in-sections);
       margin-top: 20px;
       margin-bottom: 30px;
     }
@@ -181,8 +181,8 @@
       font-weight: 400;
       font-family: "Albert Sans", sans-serif;
       line-height: 18.48px;
-      color: rgb(255, 255, 255);
-      background-color: #02776e;
+      color: var(--color-text-default-main);
+      background-color: var(--color-main-company);
 
       &.latest-news__link-news:hover{
         background-color: #3B3B3B;

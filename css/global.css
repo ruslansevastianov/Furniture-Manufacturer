@@ -1,13 +1,34 @@
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    scroll-behavior: smooth;
+  --color-text-main-nav-section-headers: rgb(132, 120, 104);
+  --color-text-default-nav-section-headers: rgb(247, 247, 245);
+
+  --color-text-small-headers-in-sections: rgb(58, 58, 58);
+  --color-text-main-description: rgb(133, 133, 133);
+
+  --color-main-company: #02776e;
+  --color-text-default-main: rgb(255, 255, 255);
+  --color-text-type-1: rgba(255, 255, 255, 0.76);
+  --color-text-type-2: rgba(255, 255, 255, 0.81);
+  --color-text-placeholder-input-form: #a5a5a5;
+  --color-background-main: #2B2B2B;
+  --color-background-type-1: #3B3B3B;
+  --color-background-type-2: rgba(255, 255, 255, 0.38);
+  --color-background-type-3: rgb(34, 34, 34);
+  --color-background-type-4: #cacaca;
+  --color-background-type-5: #ECECEC;
+  --color-background-type-6: #D5D5D5;
+  
+
+  
+  scroll-behavior: smooth;
 }
 
 body.no-scroll {

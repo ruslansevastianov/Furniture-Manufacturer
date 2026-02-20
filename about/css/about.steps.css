@@ -32,7 +32,7 @@
         font-family: "Albert Sans", sans-serif;
         line-height: 12px;
         letter-spacing: 1.2px;
-        color: rgb(132, 120, 104);
+        color: var(--color-text-main-nav-section-headers);
         margin-top: 10px;
       }
     }
@@ -41,7 +41,7 @@
       font-weight: 400;
       font-family: Philosopher, sans-serif;
       line-height: 40.8px;
-      color: rgb(58, 58, 58);
+      color: var(--color-text-small-headers-in-sections);
       text-align: center;
       margin: 25px 0;
 
@@ -91,7 +91,7 @@
             font-weight: 400;
             font-family: Philosopher, sans-serif;
             line-height: 24.2px;
-            color: rgb(132, 120, 104);
+            color: var(--color-text-main-nav-section-headers);
           }
           .steps__header-step {
             font-size: 22px;
@@ -114,7 +114,7 @@
           font-weight: 400;
           font-family: "Albert Sans", sans-serif;
           line-height: 25.5px;
-          color: rgb(133, 133, 133);
+          color: var(--color-text-main-description);
           margin-top: 15px;
         }
       }
@@ -153,8 +153,8 @@
         transform: translate(-50%, -50%);
         width: 70px;
         height: 70px;
-        color: #02776e;
-        background-color: white;
+        color: var(--color-main-company);
+        background-color: var(--color-text-default-main);
         border-radius: 50%;
 
         @media (min-width: 768px) {
@@ -195,14 +195,14 @@
           font-family: "Albert Sans", sans-serif;
           line-height: 12px;
           letter-spacing: 1.2px;
-          color: rgb(132, 120, 104);
+          color: var(--color-text-main-nav-section-headers);
         }
         .steps__item-advantages-description {
           font-size: 17px;
           font-weight: 400;
           font-family: "Albert Sans", sans-serif;
           line-height: 25.5px;
-          color: rgb(133, 133, 133);
+          color: var(--color-text-main-description);
           margin-top: 15px;
         }
       }
