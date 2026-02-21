@@ -360,7 +360,7 @@
       margin: 0 10px;
       cursor: pointer;
 
-      &.active-dot-item{
+      &.active-dot-item {
         background-color: var(--color-background-type-3);
       }
 

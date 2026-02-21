@@ -4,7 +4,7 @@
   background-size: cover;
   padding: 90px 0;
 
-  .projects__main-container{
+  .projects__main-container {
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -97,7 +97,7 @@
 
       @media (min-width: 480px) {
         height: 104px;
-              bottom: 12%;
+        bottom: 12%;
       }
 
       .projects__header-project {

@@ -9,25 +9,29 @@
 :root {
   --color-text-main-nav-section-headers: rgb(132, 120, 104);
   --color-text-default-nav-section-headers: rgb(247, 247, 245);
-
+  --color-text-default-main-header: black;
   --color-text-small-headers-in-sections: rgb(58, 58, 58);
+  --color-text-small-type-2-headers-in-sections: rgba(239, 238, 236, 0.76);
   --color-text-main-description: rgb(133, 133, 133);
-
+  --color-text-pre-order: rgb(97, 168, 84);
   --color-main-company: #02776e;
+  --color-light-main-company: #90c1bc;
+  --color-light-2-main-company: #32cd32;
   --color-text-default-main: rgb(255, 255, 255);
   --color-text-type-1: rgba(255, 255, 255, 0.76);
   --color-text-type-2: rgba(255, 255, 255, 0.81);
   --color-text-placeholder-input-form: #a5a5a5;
-  --color-background-main: #2B2B2B;
-  --color-background-type-1: #3B3B3B;
+  --color-background-main: #2b2b2b;
+  --color-background-type-1: #3b3b3b;
   --color-background-type-2: rgba(255, 255, 255, 0.38);
   --color-background-type-3: rgb(34, 34, 34);
   --color-background-type-4: #cacaca;
-  --color-background-type-5: #ECECEC;
-  --color-background-type-6: #D5D5D5;
-  
+  --color-background-type-5: #ececec;
+  --color-background-type-6: #d5d5d5;
+  --color-background-type-7: rgba(0, 0, 0, 0.5);
+  --color-background-pre-order: #e2ffdd;
+  --color-background-line-footer: #373737;
 
-  
   scroll-behavior: smooth;
 }
 

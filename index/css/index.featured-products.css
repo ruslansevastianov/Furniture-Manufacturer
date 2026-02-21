@@ -72,7 +72,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    background-color: rgb(70, 76, 92);
+    background-color: var(--color-background-type-1);
     font-size: 14px;
     font-weight: 600;
     color: var(--color-text-default-main);
@@ -135,8 +135,8 @@
   margin-top: 20px;
   cursor: pointer;
 
-  &.featured-products__button-buy:hover{
+  &.featured-products__button-buy:hover {
     background-color: var(--color-text-default-main);
-    color: #3B3B3B;
+    color: var(--color-background-type-1);
   }
 }

@@ -71,7 +71,7 @@
 }
 .categories__section-header {
   font-size: 24px;
-  color: rgba(239, 238, 236, 0.76);
+  color: var(--color-text-small-type-2-headers-in-sections);
   font-family: Philosopher, sans-serif;
   font-weight: 400;
   line-height: 39.2px;
@@ -101,7 +101,7 @@
 }
 .categories__section-description {
   font-size: 17px;
-  color: rgb(220, 220, 220);
+  color: var(--color-text-type-1);
   font-family: "Albert Sans", sans-serif;
   font-weight: 400;
   line-height: 25.5px;

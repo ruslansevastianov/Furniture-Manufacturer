@@ -25,7 +25,7 @@
 
   @media (min-width: 768px) {
     flex: 0.25;
-      align-items: flex-start;
+    align-items: flex-start;
   }
 }
 .footer__container-logo-company {
@@ -52,7 +52,7 @@
     fill: var(--color-text-default-main);
 
     &.footer-logo_2gS:hover{
-      fill: #E0E0D9;
+      fill: var(--color-background-type-4);
     }
   }
 }
@@ -105,7 +105,7 @@
     letter-spacing: 1.2px;
     font-weight: 800px;
     font-family: "Albert Sans", sans-serif;
-    color: rgb(247, 247, 245);
+    color: var(--color-text-default-nav-section-headers);
     margin: 20px 0;
   }
   .footer__description-form {
@@ -202,7 +202,7 @@
       display: block;
       width: 100%;
       height: 1px;
-      background-color: #373737;
+      background-color: var(--color-background-line-footer);
       margin: 40px 0;
     }
   }
@@ -237,7 +237,7 @@
         letter-spacing: 1.2px;
         font-weight: 800;
         font-family: "Albert Sans", sans-serif;
-        color: rgb(247, 247, 245);
+        color: var(--color-text-default-nav-section-headers);
       }
 
       .footer__line-item-links {
@@ -271,7 +271,7 @@
         .footer__container-icon-contacts {
           width: 20px;
           height: 24px;
-          color: #818180;
+          color: var(--color-background-type-2);
         }
 
         .footer__name-contacts {
@@ -347,7 +347,6 @@
   .footer__container-menu-copyright {
     max-width: 100%;
     display: flex;
-
     align-items: center;
     justify-content: center;
 

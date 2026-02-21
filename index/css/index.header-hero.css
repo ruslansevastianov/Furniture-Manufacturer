@@ -33,7 +33,7 @@
     font-family: Philosopher, sans-serif;
     font-size: 60px;
     font-weight: 400;
-    color: black;
+    color: var(--color-text-default-main-header);
 
     @media (min-width: 540px) {
       font-size: 60px;

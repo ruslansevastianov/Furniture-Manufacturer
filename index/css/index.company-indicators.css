@@ -34,7 +34,7 @@
     .company-indicators__line {
       width: 41px;
       height: 2px;
-      background-color: #329189;
+      background-color: var(--color-light-main-company);
       margin: 15px 0;
 
       @media (min-width: 480px) {

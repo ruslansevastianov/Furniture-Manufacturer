@@ -185,7 +185,7 @@
       background-color: var(--color-main-company);
 
       &.latest-news__link-news:hover{
-        background-color: #3B3B3B;
+        background-color: var(--color-background-type-1);
       }
     }
   }
