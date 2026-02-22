@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "typeProduct": "Angela Sofa",
+    "version": "",
+    "preOrder": false,
+    "price": "330.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-angela-sofa.jpeg"
+  },
+  {
+    "id": 2,
+    "typeProduct": "Arona Armchair",
+    "version": "Bestseller",
+    "preOrder": false,
+    "price": "199.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-arona-armchair.jpeg"
+  },
+  {
+    "id": 3,
+    "typeProduct": "Barr Chair",
+    "version": "Sale",
+    "preOrder": false,
+    "price": "100.00",
+    "oldPrice": "110.00",
+    "image": "shop/img/shop-barr-chair.jpeg"
+  },
+  {
+    "id": 4,
+    "typeProduct": "Delar Sofa",
+    "version": "New",
+    "preOrder": false,
+    "price": "350.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-delar-sofa.jpeg"
+  },
+  {
+    "id": 5,
+    "typeProduct": "Donna Bedside Table",
+    "version": "",
+    "preOrder": false,
+    "price": "150.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-donna-bedside-table.jpeg"
+  },
+  {
+    "id": 6,
+    "typeProduct": "Erica Chest of Drawers",
+    "version": "New",
+    "preOrder": false,
+    "price": "150.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-erica-chest-of-drawers.jpeg"
+  },
+  {
+    "id": 7,
+    "typeProduct": "Fusion Chair",
+    "version": "",
+    "preOrder": false,
+    "price": "100.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-fusion-chair.jpeg"
+  },
+  {
+    "id": 8,
+    "typeProduct": "Fusion Dresser",
+    "version": "",
+    "preOrder": false,
+    "price": "320.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-fusion-dresser.jpeg"
+  },
+  {
+    "id": 9,
+    "typeProduct": "George Sofa",
+    "version": "Sale",
+    "preOrder": false,
+    "price": "100.00",
+    "oldPrice": "310.00",
+    "image": "shop/img/shop-george-sofa.jpeg"
+  },
+  {
+    "id": 10,
+    "typeProduct": "Glory Cabinet",
+    "version": "Sale",
+    "preOrder": false,
+    "price": "140.00",
+    "oldPrice": "250.00",
+    "image": "shop/img/shop-glory-cabinet.jpeg"
+  },
+  {
+    "id": 11,
+    "typeProduct": "Lora Armchair",
+    "version": "",
+    "preOrder": false,
+    "price": "290.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-lora-armchair.jpeg"
+  },
+  {
+    "id": 12,
+    "typeProduct": "Lord Armchair",
+    "version": "",
+    "preOrder": false,
+    "price": "220.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-lord-armchair.jpeg"
+  },
+  {
+    "id": 13,
+    "typeProduct": "Snitch Cabinet",
+    "version": "Bestseller",
+    "preOrder": false,
+    "price": "90.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-snitch-cabinet.jpeg"
+  },
+  {
+    "id": 14,
+    "typeProduct": "Ultimate Green Chair",
+    "version": "Limited",
+    "preOrder": false,
+    "price": "110.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-ultimate-green-chair.jpeg"
+  },
+  {
+    "id": 15,
+    "typeProduct": "Upi Bedside Table",
+    "version": "Limited",
+    "preOrder": false,
+    "price": "110.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-upi-bedside-table.jpeg"
+  },
+  {
+    "id": 16,
+    "typeProduct": "Bubbles Sofa",
+    "version": "",
+    "preOrder": true,
+    "price": "310.00",
+    "oldPrice": 0,
+    "image": "shop/img/shop-bubbles-sofa.jpeg"
+  }
+]
