@@ -8,6 +8,8 @@
 const response = await fetch("../../api/home/products.json");
 const products = await response.json();
 
+console.log(products);
+
 renderProducts(products);
 
 
