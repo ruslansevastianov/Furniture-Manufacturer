@@ -6,7 +6,7 @@
     "preOrder": false,
     "price": "110.00",
     "oldPrice": 0,
-    "image": "./index/img/index-featured-products-upi-bedside-table.jpeg"
+    "image": "../../index/img/index-featured-products-upi-bedside-table.jpeg"
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@
     "preOrder": false,
     "price": "330.00",
     "oldPrice": 0,
-    "image": "./index/img/index-featured-products-angela-sofa.jpeg"
+    "image": "../../index/img/index-featured-products-angela-sofa.jpeg"
   },
   {
     "id": 9,
@@ -24,7 +24,7 @@
     "preOrder": false,
     "price": "100.00",
     "oldPrice": "310.00",
-    "image": "./index/img/index-featured-products-george-sofa.jpeg"
+    "image": "../../index/img/index-featured-products-george-sofa.jpeg"
   },
   {
     "id": 8,
@@ -33,7 +33,7 @@
     "preOrder": false,
     "price": "320.00",
     "oldPrice": 0,
-    "image": "./index/img/index-featured-products-fusion-dresser.jpeg"
+    "image": "../../index/img/index-featured-products-fusion-dresser.jpeg"
   },
   {
     "id": 10,
@@ -42,7 +42,7 @@
     "preOrder": false,
     "price": "140.00",
     "oldPrice": "250.00",
-    "image": "./index/img/index-featured-products-glory-cabinet.jpeg"
+    "image": "../../index/img/index-featured-products-glory-cabinet.jpeg"
   },
   {
     "id": 5,
@@ -51,6 +51,6 @@
     "preOrder": false,
     "price": "150.00",
     "oldPrice": 0,
-    "image": "./index/img/index-featured-products-donna-bedside-table.jpeg"
+    "image": "../../index/img/index-featured-products-donna-bedside-table.jpeg"
   }
 ]
