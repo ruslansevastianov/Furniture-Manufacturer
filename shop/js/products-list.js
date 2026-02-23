@@ -4,7 +4,7 @@
 //     renderProducts(data);
 //   });
 
-const response = await fetch("../../api/shop/products.json");
+const response = await fetch("api/shop/products.json");
 const products = await response.json();
 
 renderProducts(products);

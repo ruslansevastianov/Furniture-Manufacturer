@@ -1,15 +1,15 @@
-fetch("api/home/products.json")
-  .then((response) => response.json())
-  .then((data) => {
-    renderProducts(data);
-  });
-console.log("products-list.js loaded");
+// fetch("api/home/products.json")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     renderProducts(data);
+//   });
 
 
-// const response = await fetch("api/home/products.json");
-// const products = await response.json();
 
-// renderProducts(products);
+const response = await fetch("api/home/products.json");
+const products = await response.json();
+
+renderProducts(products);
 
 
 function renderProducts(products) {
