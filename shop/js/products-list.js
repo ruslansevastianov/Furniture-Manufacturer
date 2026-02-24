@@ -1,20 +1,30 @@
-// fetch("../../api/shop/products.json")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     renderProducts(data);
-//   });
-
-const response = await fetch("api/shop/products.json");
-const products = await response.json();
-
-renderProducts(products);
+import { ProductsService} from "../../js/products-service.js";
 
 
-function renderProducts(products) {
-  let productsHtml = [];
-  for (const product of products) {
-    if (!product.version && !product.oldPrice && !product.preOrder) {
-      productsHtml.push(`
+export class ProductsList {
+
+    constructor() {
+        this.container = document.querySelector(".main__container-products");
+        this.productsService = new ProductsService();
+        this.renderProducts();
+    }
+
+
+
+    async renderProducts(){
+        let productsListHtml = "";
+
+        const products = await this.productsService.getProducts();
+
+        products.forEach((product) => {
+            productsListHtml +=  this.createProductHtml(product);
+        });
+        this.container.innerHTML = productsListHtml;
+    }
+
+    createProductHtml(product) {
+            if (!product.version && !product.oldPrice && !product.preOrder) {
+      return `
           <article class="main__product-card">
             <a class="main__link-product" href="#">
               <div class="main__container-image-product">
@@ -27,11 +37,11 @@ function renderProducts(products) {
               <p class="main__header-type-product">${product.typeProduct}</p>
             </a>
             <p class="main__product-price">${product.price} USD</p>
-            <a class="main__product-buy" href="#">Buy</a>
+            <a class="main__product-buy" href="#" data-id = ${product.id}>Buy</a>
           </article>
-            `);
+            `;
     } else if (product.version && !product.oldPrice && !product.preOrder) {
-      productsHtml.push(`
+      return `
             <article class="main__product-card">
             <a class="main__link-product" href="#">
               <div class="main__container-image-product">
@@ -45,10 +55,10 @@ function renderProducts(products) {
               <p class="main__header-type-product">${product.typeProduct}</p>
             </a>
             <p class="main__product-price">${product.price} USD</p>
-            <a class="main__product-buy" href="#">Buy</a>
-          </article>`);
+            <a class="main__product-buy" href="#" data-id = ${product.id}>Buy</a>
+          </article>`;
     } else if (product.version && product.oldPrice && !product.preOrder) {
-      productsHtml.push(`
+      return `
           <article class="main__product-card">
             <a class="main__link-product" href="#">
               <div class="main__container-image-product">
@@ -65,11 +75,11 @@ function renderProducts(products) {
             <s class="main__product-sale-price">${product.oldPrice} USD</s>
             <p class="main__product-price">${product.price} USD</p>
             </div>
-            <a class="main__product-buy" href="#">Buy</a>
+            <a class="main__product-buy" href="#" data-id = ${product.id}>Buy</a>
           </article>
-        `);
+        `;
     } else if (!product.version && !product.oldPrice && product.preOrder) {
-      productsHtml.push(`
+      return `
           <article class="main__product-card">
             <a class="main__link-product" href="#">
               <div>
@@ -85,12 +95,12 @@ function renderProducts(products) {
               <p class="main__header-type-product">${product.typeProduct}</p>
             </a>
             <p class="main__product-price">${product.price} USD</p>
-            <a class="main__product-buy" href="#">Buy</a>
+            <a class="main__product-buy" href="#" data-id = ${product.id}>Buy</a>
           </article>   
-            `);
+            `;
     }
-  }
-  document.querySelector(".main__container-products").innerHTML = productsHtml.join("");
-};
+    }
+}
 
 
+new ProductsList();
