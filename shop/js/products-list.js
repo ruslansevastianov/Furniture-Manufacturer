@@ -1,29 +1,25 @@
-import { ProductsService} from "../../js/products-service.js";
-
+import { ProductsService } from "../../js/products-service.js";
 
 export class ProductsList {
+  constructor() {
+    this.container = document.querySelector(".main__container-products");
+    this.productsService = new ProductsService();
+    this.renderProducts();
+  }
 
-    constructor() {
-        this.container = document.querySelector(".main__container-products");
-        this.productsService = new ProductsService();
-        this.renderProducts();
-    }
+  async renderProducts() {
+    let productsListHtml = "";
 
+    const products = await this.productsService.getProducts();
 
+    products.forEach((product) => {
+      productsListHtml += this.createProductHtml(product);
+    });
+    this.container.innerHTML = productsListHtml;
+  }
 
-    async renderProducts(){
-        let productsListHtml = "";
-
-        const products = await this.productsService.getProducts();
-
-        products.forEach((product) => {
-            productsListHtml +=  this.createProductHtml(product);
-        });
-        this.container.innerHTML = productsListHtml;
-    }
-
-    createProductHtml(product) {
-            if (!product.version && !product.oldPrice && !product.preOrder) {
+  createProductHtml(product) {
+    if (!product.version && !product.oldPrice && !product.preOrder) {
       return `
           <article class="main__product-card">
             <a class="main__link-product" href="#">
@@ -99,8 +95,7 @@ export class ProductsList {
           </article>   
             `;
     }
-    }
+  }
 }
-
 
 new ProductsList();

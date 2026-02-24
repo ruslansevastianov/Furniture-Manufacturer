@@ -9,12 +9,11 @@ export class ProductsService {
     }
   }
 
-
   async getProducts() {
     if (!this.products) {
-      const response = await fetch("api/shop/products.json");
+      const response = await fetch("api/products.json");
       this.products = await response.json();
-      return this.products; // Return the fetched products
+      return this.products;
     } else {
       return this.products;
     }

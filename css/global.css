@@ -31,6 +31,7 @@
   --color-background-type-7: rgba(0, 0, 0, 0.5);
   --color-background-pre-order: #e2ffdd;
   --color-background-line-footer: #373737;
+  --color-link-page-shop: red;
 
   scroll-behavior: smooth;
 }

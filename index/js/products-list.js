@@ -1,22 +1,36 @@
-// fetch("api/home/products.json")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     renderProducts(data);
-//   });
+import { ProductsService } from "../../js/products-service.js";
 
+export class ProductsList {
+  constructor() {
+    this.container = document.querySelector(
+      ".featured-products__container-products",
+    );
+    this.productsService = new ProductsService();
+    this.renderProducts();
+  }
 
+  async renderProducts() {
+    let productsListHtml = "";
 
-const response = await fetch("api/home/products.json");
-const products = await response.json();
+    const products = await this.productsService.getProducts();
+    const targetListId = [15, 1, 9, 8, 10, 5]; // id товарів, які ми хочемо відображати на головній сторінці, у вказаному порядку
+    let resultListProducts = []; // масив для збереження товарів, які ми хочемо відобразити на головній сторінці
 
-renderProducts(products);
+    for (const id of targetListId) {
+      const product = products.find((product) => product.id === id);
+      resultListProducts.push(product);
+    }
 
+    resultListProducts.forEach((product) => {
+      productsListHtml += this.createProductHtml(product);
+    });
 
-function renderProducts(products) {
-  let productsHtml = [];
-  for (const product of products) {
+    this.container.innerHTML = productsListHtml;
+  }
+
+  createProductHtml(product) {
     if (!product.version && !product.oldPrice) {
-      productsHtml.push(`
+      return `
       <div class="featured-products__container-product">
         <a class="featured-products__link-company" href="#">
           <div class="featured-products__container-image-product">
@@ -29,11 +43,11 @@ function renderProducts(products) {
           <p class="featured-products__header-version">${product.typeProduct}</p>
         </a>
         <p class="featured-products__price">${product.price} USD</p>
-        <button class="featured-products__button-buy">Buy Now</button>
+        <button class="featured-products__button-buy" data-id = ${product.id}>Buy Now</button>
       </div>
-            `);
+            `;
     } else if (product.version && !product.oldPrice) {
-      productsHtml.push(`
+      return `
       <div class="featured-products__container-product">
         <a class="featured-products__link-company" href="#">
           <p class="featured-products__version">${product.version}</p>
@@ -47,11 +61,11 @@ function renderProducts(products) {
           <p class="featured-products__header-version">${product.typeProduct}</p>
         </a>
         <p class="featured-products__price">${product.price} USD</p>
-        <button class="featured-products__button-buy">Buy Now</button>
+        <button class="featured-products__button-buy" data-id = ${product.id}>Buy Now</button>
       </div>
-          `);
+          `;
     } else if (product.version && product.oldPrice) {
-      productsHtml.push(`
+      return `
       <div class="featured-products__container-product">
         <a class="featured-products__link-company" href="#">
           <p class="featured-products__version">${product.version}</p>
@@ -68,12 +82,11 @@ function renderProducts(products) {
           <s class="featured-products__old-price">${product.oldPrice} USD</s>
           <p class="featured-products__price">${product.price}  USD</p>
         </div>
-        <button class="featured-products__button-buy">Buy Now</button>
+        <button class="featured-products__button-buy" data-id = ${product.id}>Buy Now</button>
       </div>
-        `);
-    } 
+        `;
+    }
   }
-  document.querySelector(".featured-products__container-products").innerHTML = productsHtml.join("");
-};
+}
 
-
+new ProductsList();
