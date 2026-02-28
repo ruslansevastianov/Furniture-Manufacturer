@@ -1,6 +1,8 @@
 @import "../../css/global.css";
 @import "../../css/global.header-nav.css";
 @import "../../css/global.footer.css";
+@import "../../css/global.icon-cart.css";
+@import "../../css/global.cart.css";
 
 .main {
   margin-top: 103px;

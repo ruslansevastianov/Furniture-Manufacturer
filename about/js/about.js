@@ -3,6 +3,8 @@ function init() {
   import("./about.dropdowns-sections-a-m-mission.js");
   import("./about.dropdowns-section-vacancies.js");
   import("./about.our-team-carousel.js");
+  import("../../js/icon-cart.js")
+  import("../../js/cart.js");
 }
 
 

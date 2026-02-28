@@ -1,5 +1,7 @@
 function init() {
   import("../../js/global.header-burger.js");
+  import("../../js/icon-cart.js");
+  import("../../js/cart.js");
 }
 
 const totalPartials = document.querySelectorAll(
