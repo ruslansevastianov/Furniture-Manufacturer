@@ -1,4 +1,5 @@
 import { ProductsService } from "../../js/products-service.js";
+import { Cart } from "../../js/cart.js";
 
 export class ProductsList {
   constructor() {
@@ -16,6 +17,10 @@ export class ProductsList {
       productsListHtml += this.createProductHtml(product);
     });
     this.container.innerHTML = productsListHtml;
+
+    document.querySelectorAll(".main__product-buy").forEach((btn) => {
+      btn.addEventListener("click", this.addProductToCart.bind(this));
+    });
   }
 
   createProductHtml(product) {
@@ -95,6 +100,12 @@ export class ProductsList {
           </article>   
             `;
     }
+  }
+
+  addProductToCart(event) {
+    const id = event.target.dataset.id;
+    const cart = new Cart();
+    cart.addProduct(id);
   }
 }
 
