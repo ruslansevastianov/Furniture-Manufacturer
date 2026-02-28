@@ -5,6 +5,8 @@ function init() {
   import("../index/js/index.slider-above-footer.js");
   import("../projects/js/projects.js");
   import("../about/js/about.js");
+  import("./icon-cart.js");
+  import("./cart.js");
 }
 
 
