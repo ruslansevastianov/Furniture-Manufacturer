@@ -1,4 +1,4 @@
-.cart {
+.icon-cart {
   width: 70px;
   height: 70px;
   background-color: var(--color-text-default-main);
@@ -13,21 +13,21 @@
   align-items: center;
   box-shadow: 0 0 8px 2px var(--color-background-type-6);
 
-  .cart__icon {
+  .icon-cart__icon {
     width: 40px;
     height: 40px;
 
-    .cart__icon-image {
+    .icon-cart__icon-image {
       width: 100%;
       height: 100%;
 
-      .cart__icon-path {
+      .icon-cart__icon-path {
         stroke: var(--color-background-type-1);
       }
     }
   }
 
-  .cart__container {
+  .icon-cart__container {
     width: 24px;
     height: 24px;
     position: absolute;
