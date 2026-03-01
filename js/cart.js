@@ -17,9 +17,6 @@ cart.addEventListener("click", (e) => {
 
 
 
-
-
-
 export class Cart {
   static #instance;
   
@@ -33,7 +30,7 @@ export class Cart {
     this.cart = JSON.parse(localStorage.getItem("cart") ?? "{}");
 
     // this.addEventListeners();
-    // this.renderCart();
+    this.renderCart();
   }
 
 
@@ -42,7 +39,7 @@ export class Cart {
   //   document.querySelector(".order").addEventListener("click", this.order.bind(this));
   // }
 
-  // async renderCart() {
+  async renderCart() {
   //   let total = 0;
     
   //   let cartHtml = '';
@@ -69,9 +66,23 @@ export class Cart {
     // this.container
     //   .querySelectorAll(".minus")
     //   .forEach((el) => el.addEventListener("click", (ev) => this.changeQuantity(ev, this.deleteProductOperation)));
-    // document.querySelector(".cart-badge").innerHTML = Object.keys(this.cart).length;
 
-  // }
+    let quantityOfProducts = 0;
+
+    for(let count in this.cart){
+      quantityOfProducts += this.cart[count];
+    }
+
+
+    document.querySelector(".icon-cart__container").innerHTML = `${quantityOfProducts > 9 ? '9+' : quantityOfProducts}`;
+
+
+
+    
+
+
+
+  }
   
 
 
@@ -112,7 +123,7 @@ export class Cart {
   addProduct(id) {
     this.addProductOperation(id);
     this.saveCart();
-    // this.renderCart();
+    this.renderCart();
   }
 
 
