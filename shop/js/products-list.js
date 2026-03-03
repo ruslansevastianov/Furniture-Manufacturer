@@ -21,6 +21,8 @@ export class ProductsList {
     document.querySelectorAll(".main__product-buy").forEach((btn) => {
       btn.addEventListener("click", this.addProductToCart.bind(this));
     });
+
+
   }
 
   createProductHtml(product) {

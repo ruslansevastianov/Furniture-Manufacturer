@@ -5,4 +5,5 @@ iconButton.addEventListener("click", () => {
   if (cart.classList.contains("not-visible")) {
     cart.classList.remove("not-visible");
   }
+  document.body.classList.toggle('no-scroll');
 });
