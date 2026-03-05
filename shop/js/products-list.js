@@ -29,7 +29,7 @@ export class ProductsList {
     if (!product.version && !product.oldPrice && !product.preOrder) {
       return `
           <article class="main__product-card">
-            <a class="main__link-product" href="#">
+            <a class="main__link-product" href="shop/product.html">
               <div class="main__container-image-product">
                 <img
                   class="main__image-product"
@@ -46,7 +46,7 @@ export class ProductsList {
     } else if (product.version && !product.oldPrice && !product.preOrder) {
       return `
             <article class="main__product-card">
-            <a class="main__link-product" href="#">
+            <a class="main__link-product" href="shop/product.html">
               <div class="main__container-image-product">
                 <img
                   class="main__image-product"
@@ -63,7 +63,7 @@ export class ProductsList {
     } else if (product.version && product.oldPrice && !product.preOrder) {
       return `
           <article class="main__product-card">
-            <a class="main__link-product" href="#">
+            <a class="main__link-product" href="shop/product.html">
               <div class="main__container-image-product">
                 <img
                   class="main__image-product"
@@ -84,7 +84,7 @@ export class ProductsList {
     } else if (!product.version && !product.oldPrice && product.preOrder) {
       return `
           <article class="main__product-card">
-            <a class="main__link-product" href="#">
+            <a class="main__link-product" href="shop/product.html">
               <div>
                 <div class="main__container-image-product">
                   <img

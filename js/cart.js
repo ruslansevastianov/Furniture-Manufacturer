@@ -6,6 +6,12 @@ const cartModal = document.querySelector(".cart__modal");
 const buttonCloseModal = document.querySelector(
   ".cart__modal-container-icon-close",
 );
+const messageCartIsEmpty = document.querySelector(
+  ".cart__message-cart-is-empty",
+);
+const mainContainerContent = document.querySelector(
+  ".cart__main-container-content",
+);
 
 buttonCloseModal.addEventListener("click", () => {
   cart.classList.add("not-visible");
@@ -132,6 +138,14 @@ export class Cart {
             .classList.add("cart__promo-code-error-message-not-visible");
         }
       });
+
+    if (!Object.keys(this.cart).length) {
+      mainContainerContent.classList.add("not-visible");
+      messageCartIsEmpty.classList.remove("not-visible");
+    } else {
+      messageCartIsEmpty.classList.add("not-visible");
+      mainContainerContent.classList.remove("not-visible");
+    }
   }
 
   createCartHtml(product) {
